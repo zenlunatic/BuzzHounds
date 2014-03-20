@@ -9,13 +9,13 @@
 /* Begin PBXBuildFile section */
 		04F187BC18D7C042004515D2 /* BuzzHoundsClown.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 04F187BB18D7C042004515D2 /* BuzzHoundsClown.jpg */; };
 		04F187C018D7C098004515D2 /* BuzzHoundsFlag.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 04F187BE18D7C098004515D2 /* BuzzHoundsFlag.jpg */; };
-		04F187C118D7C098004515D2 /* BuzzHoundsTitle.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 04F187BF18D7C098004515D2 /* BuzzHoundsTitle.jpg */; };
 		04F187C418D7C0AC004515D2 /* deathrace-hardrock.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 04F187C318D7C0AC004515D2 /* deathrace-hardrock.mp3 */; };
 		04F1880718DB632A004515D2 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04F1880618DB632A004515D2 /* AudioToolbox.framework */; };
 		04F1880918DB6333004515D2 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04F1880818DB6333004515D2 /* AVFoundation.framework */; };
 		04F1881118DB67FC004515D2 /* MainContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F1881018DB67FC004515D2 /* MainContentViewController.m */; };
 		04F1881418DB6B03004515D2 /* WebsiteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F1881318DB6B03004515D2 /* WebsiteViewController.m */; };
 		04F1881618DB7CD6004515D2 /* buzzhoundslogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 04F1881518DB7CD6004515D2 /* buzzhoundslogo.png */; };
+		04F1881818DBA27C004515D2 /* standup.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 04F1881718DBA27C004515D2 /* standup.mp3 */; };
 		5856843A177E52F1006FEB91 /* UIImage+Alpha.m in Sources */ = {isa = PBXBuildFile; fileRef = 58568435177E52F1006FEB91 /* UIImage+Alpha.m */; };
 		5856843B177E52F1006FEB91 /* UIImage+Resize.m in Sources */ = {isa = PBXBuildFile; fileRef = 58568437177E52F1006FEB91 /* UIImage+Resize.m */; };
 		5856843C177E52F1006FEB91 /* UIImage+RoundedCorner.m in Sources */ = {isa = PBXBuildFile; fileRef = 58568439177E52F1006FEB91 /* UIImage+RoundedCorner.m */; };
@@ -54,7 +54,6 @@
 /* Begin PBXFileReference section */
 		04F187BB18D7C042004515D2 /* BuzzHoundsClown.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = BuzzHoundsClown.jpg; path = CBG/BuzzHoundsClown.jpg; sourceTree = "<group>"; };
 		04F187BE18D7C098004515D2 /* BuzzHoundsFlag.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = BuzzHoundsFlag.jpg; path = CBG/BuzzHoundsFlag.jpg; sourceTree = "<group>"; };
-		04F187BF18D7C098004515D2 /* BuzzHoundsTitle.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = BuzzHoundsTitle.jpg; path = CBG/BuzzHoundsTitle.jpg; sourceTree = "<group>"; };
 		04F187C318D7C0AC004515D2 /* deathrace-hardrock.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "deathrace-hardrock.mp3"; path = "CBG/deathrace-hardrock.mp3"; sourceTree = "<group>"; };
 		04F1880618DB632A004515D2 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		04F1880818DB6333004515D2 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
@@ -63,6 +62,7 @@
 		04F1881218DB6B03004515D2 /* WebsiteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebsiteViewController.h; sourceTree = "<group>"; };
 		04F1881318DB6B03004515D2 /* WebsiteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebsiteViewController.m; sourceTree = "<group>"; };
 		04F1881518DB7CD6004515D2 /* buzzhoundslogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = buzzhoundslogo.png; sourceTree = "<group>"; };
+		04F1881718DBA27C004515D2 /* standup.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = standup.mp3; sourceTree = "<group>"; };
 		58568434177E52F1006FEB91 /* UIImage+Alpha.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Alpha.h"; sourceTree = "<group>"; };
 		58568435177E52F1006FEB91 /* UIImage+Alpha.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Alpha.m"; sourceTree = "<group>"; };
 		58568436177E52F1006FEB91 /* UIImage+Resize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Resize.h"; sourceTree = "<group>"; };
@@ -144,6 +144,7 @@
 		04F1880A18DB6388004515D2 /* Audio */ = {
 			isa = PBXGroup;
 			children = (
+				04F1881718DBA27C004515D2 /* standup.mp3 */,
 				04F187C318D7C0AC004515D2 /* deathrace-hardrock.mp3 */,
 			);
 			name = Audio;
@@ -154,7 +155,6 @@
 			children = (
 				04F1881518DB7CD6004515D2 /* buzzhoundslogo.png */,
 				04F187BE18D7C098004515D2 /* BuzzHoundsFlag.jpg */,
-				04F187BF18D7C098004515D2 /* BuzzHoundsTitle.jpg */,
 				04F187BB18D7C042004515D2 /* BuzzHoundsClown.jpg */,
 			);
 			name = Images;
@@ -234,8 +234,7 @@
 				589231D4177E00D20075205C /* MainStoryboard.storyboard */,
 				589231C3177E00D20075205C /* Supporting Files */,
 			);
-			name = Buzzhounds;
-			path = "Buzzhounds";
+			path = Buzzhounds;
 			sourceTree = "<group>";
 		};
 		589231C3177E00D20075205C /* Supporting Files */ = {
@@ -335,7 +334,7 @@
 			dependencies = (
 			);
 			name = Buzzhounds;
-			productName = "Buzzhounds";
+			productName = Buzzhounds;
 			productReference = 589231B9177E00D20075205C /* Buzzhounds.app */;
 			productType = "com.apple.product-type.application";
 		};
@@ -376,12 +375,12 @@
 				589231D1177E00D20075205C /* Default@2x.png in Resources */,
 				589231D3177E00D20075205C /* Default-568h@2x.png in Resources */,
 				04F1881618DB7CD6004515D2 /* buzzhoundslogo.png in Resources */,
-				04F187C118D7C098004515D2 /* BuzzHoundsTitle.jpg in Resources */,
 				589231D6177E00D20075205C /* MainStoryboard.storyboard in Resources */,
 				04F187BC18D7C042004515D2 /* BuzzHoundsClown.jpg in Resources */,
 				58EBAB2A177E0C1500D16B68 /* StockPhotos in Resources */,
 				04F187C018D7C098004515D2 /* BuzzHoundsFlag.jpg in Resources */,
 				5871863F177F4E1A004EFB15 /* Icon-57x57.png in Resources */,
+				04F1881818DBA27C004515D2 /* standup.mp3 in Resources */,
 				58718640177F4E1A004EFB15 /* Icon-57x57@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -45,12 +45,12 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="jHj-bR-DOk">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" id="jHj-bR-DOk">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="1000"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <subviews>
                                     <containerView contentMode="scaleToFill" id="PCV-go-NML">
-                                        <rect key="frame" x="0.0" y="407" width="320" height="917"/>
+                                        <rect key="frame" x="0.0" y="395" width="320" height="2013"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <connections>
@@ -110,15 +110,15 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" id="cmn-Ar-Ni0">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="1000"/>
+                                <rect key="frame" x="-5" y="12" width="320" height="2000"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BuzzHoundsFlag.jpg" id="NIo-Pc-wHW">
-                                        <rect key="frame" x="110" y="533" width="100" height="54"/>
+                                        <rect key="frame" x="115" y="904" width="100" height="54"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
                                     <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="buzzhoundslogo.png" id="j7r-Hc-Hrq">
-                                        <rect key="frame" x="17" y="25" width="286" height="128"/>
+                                        <rect key="frame" x="17" y="-9" width="286" height="128"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <gestureRecognizers/>
                                         <connections>
@@ -126,7 +126,7 @@
                                         </connections>
                                     </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="ow7-3N-7vX">
-                                        <rect key="frame" x="130" y="506" width="60" height="30"/>
+                                        <rect key="frame" x="135" y="866" width="60" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" title="Website">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -136,7 +136,12 @@
                                         </connections>
                                     </button>
                                     <webView contentMode="scaleAspectFit" scalesPageToFit="YES" id="Itp-ge-xQV">
-                                        <rect key="frame" x="13" y="170" width="295" height="336"/>
+                                        <rect key="frame" x="17" y="168" width="291" height="373"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    </webView>
+                                    <webView contentMode="scaleToFill" id="yH9-Dv-Z5g">
+                                        <rect key="frame" x="20" y="559" width="285" height="215"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     </webView>
@@ -150,6 +155,7 @@
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="320" height="1000"/>
                     <connections>
+                        <outlet property="videoView" destination="yH9-Dv-Z5g" id="96D-yl-bpJ"/>
                         <outlet property="webGigsView" destination="Itp-ge-xQV" id="nLW-ye-MNR"/>
                     </connections>
                 </viewController>

@@ -35,12 +35,8 @@
     
     [super viewDidLoad];
 
-    //ScrollView content size
-    if([CBGUtil is4InchIphone]) {
-        self.scrollView.contentSize = CGSizeMake(320, 1000);
-    } else {
-        self.scrollView.contentSize = CGSizeMake(320, 580);
-    }
+    self.scrollView.contentSize = CGSizeMake(320, 2000);
+    
     
     CBGPhotos *photos = [[CBGPhotos alloc] init];
     photos.photo = [UIImage imageNamed: @"BuzzHoundsClown.jpg"];
@@ -103,7 +99,7 @@
 }
 
 - (void) crossDissolvePhotos:(CBGPhotos *) photos withTitle:(NSString *) title {
-    [UIView transitionWithView:self.backgroundPhoto duration:1.0f options:UIViewAnimationOptionTransitionCrossDissolve animations:^{
+    [UIView transitionWithView:self.backgroundPhoto duration:4.0f options:UIViewAnimationOptionTransitionCrossDissolve animations:^{
         
         self.backgroundPhoto.image = photos.photo;
         self.backgroundPhotoWithImageEffects.image = photos.photoWithEffects;
@@ -119,12 +115,15 @@
 }
 
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView {
-    if(scrollView.contentOffset.y >= 0 && scrollView.contentOffset.y <= 80.0) {
-        float percent = (scrollView.contentOffset.y / 80.0);
+    
+    float settingDissolve = 300.0;
+    
+    if(scrollView.contentOffset.y >= 0 && scrollView.contentOffset.y <= settingDissolve) {
+        float percent = (scrollView.contentOffset.y / settingDissolve);
         
         self.backgroundPhotoWithImageEffects.alpha = percent;
         
-    } else if (scrollView.contentOffset.y > 80.0){
+    } else if (scrollView.contentOffset.y > settingDissolve){
         self.backgroundPhotoWithImageEffects.alpha = 1;
     } else if (scrollView.contentOffset.y < 0) {
         self.backgroundPhotoWithImageEffects.alpha = 0;

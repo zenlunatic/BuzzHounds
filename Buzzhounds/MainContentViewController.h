@@ -13,5 +13,6 @@
 
 - (IBAction)didTouchMainLogo:(id)sender;
 @property (strong, nonatomic) IBOutlet UIWebView *webGigsView;
+@property (strong, nonatomic) IBOutlet UIWebView *videoView;
 
 @end
