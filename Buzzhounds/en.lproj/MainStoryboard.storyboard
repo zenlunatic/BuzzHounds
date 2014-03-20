@@ -45,12 +45,12 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" id="jHj-bR-DOk">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" id="jHj-bR-DOk">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="1000"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <subviews>
                                     <containerView contentMode="scaleToFill" id="PCV-go-NML">
-                                        <rect key="frame" x="0.0" y="395" width="320" height="2013"/>
+                                        <rect key="frame" x="0.0" y="395" width="320" height="1500"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <connections>
@@ -106,15 +106,15 @@
             <objects>
                 <viewController wantsFullScreenLayout="YES" id="YiS-HA-V0D" customClass="MainContentViewController" sceneMemberID="viewController">
                     <view key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="rmI-vF-Ctt">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="1000"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="1500"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" id="cmn-Ar-Ni0">
-                                <rect key="frame" x="-5" y="12" width="320" height="2000"/>
+                                <rect key="frame" x="-5" y="12" width="320" height="1500"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BuzzHoundsFlag.jpg" id="NIo-Pc-wHW">
-                                        <rect key="frame" x="115" y="904" width="100" height="54"/>
+                                        <rect key="frame" x="112" y="1086" width="100" height="54"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
                                     <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="buzzhoundslogo.png" id="j7r-Hc-Hrq">
@@ -126,9 +126,9 @@
                                         </connections>
                                     </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="ow7-3N-7vX">
-                                        <rect key="frame" x="135" y="866" width="60" height="30"/>
+                                        <rect key="frame" x="132" y="1053" width="60" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" title="Website">
+                                        <state key="normal" title="News">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
@@ -141,10 +141,21 @@
                                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     </webView>
                                     <webView contentMode="scaleToFill" id="yH9-Dv-Z5g">
-                                        <rect key="frame" x="20" y="559" width="285" height="215"/>
+                                        <rect key="frame" x="20" y="581" width="285" height="215"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     </webView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="WWW-cv-7cL">
+                                        <rect key="frame" x="23" y="842" width="285" height="169"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <size key="titleShadowOffset" width="20" height="20"/>
+                                        <state key="normal" title="Button" image="band.jpg">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="8tW-KA-uCP" kind="push" id="Wr7-fU-zoi"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             </view>
@@ -153,7 +164,7 @@
                     </view>
                     <toolbarItems/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-                    <size key="freeformSize" width="320" height="1000"/>
+                    <size key="freeformSize" width="320" height="1500"/>
                     <connections>
                         <outlet property="videoView" destination="yH9-Dv-Z5g" id="96D-yl-bpJ"/>
                         <outlet property="webGigsView" destination="Itp-ge-xQV" id="nLW-ye-MNR"/>
@@ -167,6 +178,40 @@
                 </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="294" y="122"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="0jR-ge-cNF">
+            <objects>
+                <viewController id="8tW-KA-uCP" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Hp0-eX-hCe">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" id="TFC-mZ-Nrk">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <string key="text">The BuzzHounds
+ 
+The Buzzhounds have shared the stage with Les Paul, Buddy Guy, Chicago Blues Reunion, Canned Heat, Susan Tedeschi, Magic Slim, Collective Soul, Gov’t Mule, and many more.  They have written over 50 original songs in 2 years, and have performed on national TV + radio.  
+ The BuzzHounds have been hard at work, since there inception in March of 2012. They cut their 11 song critically acclaimed full length debut, toured the regional circuit, released two singles, shot a full length HD concert video at Hard Rock Live Chicago, appeared on national television and radio, and have learned some new tricks first hand by playing with blues legends Buddy Guy, The Chicago Blues Reunion, and Magic Slim.  
+In a recent interview with Johnny “Fly” Affinito, (Illinois Entertainer and Chitownrocks online Magazine) front man Jeff Manga describes the Buzz Hounds as a blues trio with hints of an alternative soul.  Jeff speaks of the bands influences including Hendrix and Van Halen, and their quest to carry the torch of the Chicago blues and rock tradition into the future. http://tinyurl.com/chitownrock 
+The BuzzHounds are a power trio consisting of Jeff Manga (Vocals,Guitars) Eric Alvarez (Bass) and Shade Reed (Drums).   These three have played and toured with some of Chicago’s most notorious rock bands, including: Acumen Nation, Dye the Sky, Demented Ted, Honey, Lucius Warbaby, and Source.   
+The Buzzhounds have taken Chicago's live scene by storm, creating a loyal following by showcasing jaw dropping, high energy performances.  Catch the Buzzhounds live and in their element, in and around the city of Chicago.  Gigs
+The Buzz Hounds are currently working on their second record, a follow-up to their 2013 debut Weapons of Mass Seduction", due to be released in the spring of 2014. </string>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="4Il-Xh-i3v"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="g8T-NR-4Rg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="893" y="980"/>
         </scene>
         <!--Website View Controller-->
         <scene sceneID="KUb-Yu-UPZ">
@@ -192,11 +237,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dv0-WP-neq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="717" y="306"/>
+            <point key="canvasLocation" x="1065" y="204"/>
         </scene>
     </scenes>
     <resources>
         <image name="BuzzHoundsFlag.jpg" width="800" height="516"/>
+        <image name="band.jpg" width="960" height="557"/>
         <image name="buzzhoundslogo.png" width="475" height="224"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
