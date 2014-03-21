@@ -138,15 +138,10 @@
                                     <webView contentMode="scaleAspectFit" scalesPageToFit="YES" id="Itp-ge-xQV">
                                         <rect key="frame" x="17" y="168" width="291" height="373"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                    </webView>
-                                    <webView contentMode="scaleToFill" id="yH9-Dv-Z5g">
-                                        <rect key="frame" x="20" y="581" width="285" height="215"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                     </webView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="WWW-cv-7cL">
-                                        <rect key="frame" x="23" y="842" width="285" height="169"/>
+                                        <rect key="frame" x="72" y="772" width="180" height="116"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <size key="titleShadowOffset" width="20" height="20"/>
                                         <state key="normal" title="Button" image="band.jpg">
@@ -156,6 +151,24 @@
                                             <segue destination="8tW-KA-uCP" kind="push" id="Wr7-fU-zoi"/>
                                         </connections>
                                     </button>
+                                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" directionalLockEnabled="YES" bounces="NO" pagingEnabled="YES" showsVerticalScrollIndicator="NO" id="1sz-xA-YhE">
+                                        <rect key="frame" x="25" y="571" width="275" height="155"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                        <subviews>
+                                            <containerView contentMode="scaleToFill" id="eyR-G8-pvu">
+                                                <rect key="frame" x="0.0" y="0.0" width="1375" height="155"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                <connections>
+                                                    <segue destination="MZx-dr-DRI" kind="embed" id="bUn-df-LTE"/>
+                                                </connections>
+                                            </containerView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="YiS-HA-V0D" id="X6m-Lv-L5J"/>
+                                        </connections>
+                                    </scrollView>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             </view>
@@ -166,7 +179,7 @@
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="320" height="1500"/>
                     <connections>
-                        <outlet property="videoView" destination="yH9-Dv-Z5g" id="96D-yl-bpJ"/>
+                        <outlet property="YouTubeScrollView" destination="1sz-xA-YhE" id="TjV-fN-NQM"/>
                         <outlet property="webGigsView" destination="Itp-ge-xQV" id="nLW-ye-MNR"/>
                     </connections>
                 </viewController>
@@ -211,7 +224,7 @@ The Buzz Hounds are currently working on their second record, a follow-up to the
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="g8T-NR-4Rg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="893" y="980"/>
+            <point key="canvasLocation" x="1191" y="508"/>
         </scene>
         <!--Website View Controller-->
         <scene sceneID="KUb-Yu-UPZ">
@@ -237,7 +250,56 @@ The Buzz Hounds are currently working on their second record, a follow-up to the
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dv0-WP-neq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1065" y="204"/>
+            <point key="canvasLocation" x="821" y="74"/>
+        </scene>
+        <!--Pic View Controller-->
+        <scene sceneID="Wde-Xg-XUS">
+            <objects>
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="MZx-dr-DRI" customClass="PicViewController" sceneMemberID="viewController">
+                    <view key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="Tek-E1-3od">
+                        <rect key="frame" x="0.0" y="0.0" width="1375" height="155"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" id="xyd-B6-0QR">
+                                <rect key="frame" x="0.0" y="0.0" width="275" height="155"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </webView>
+                            <webView contentMode="scaleToFill" id="Iu1-yU-3WR">
+                                <rect key="frame" x="275" y="0.0" width="275" height="155"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </webView>
+                            <webView opaque="NO" contentMode="scaleToFill" id="080-Wf-eRf">
+                                <rect key="frame" x="550" y="0.0" width="275" height="155"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </webView>
+                            <webView contentMode="scaleToFill" id="IQ8-jU-0wq">
+                                <rect key="frame" x="825" y="0.0" width="275" height="155"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </webView>
+                            <webView contentMode="scaleToFill" id="leS-25-i3y">
+                                <rect key="frame" x="1100" y="0.0" width="275" height="155"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </view>
+                    <toolbarItems/>
+                    <connections>
+                        <outlet property="webView1" destination="xyd-B6-0QR" id="k8z-ya-qdt"/>
+                        <outlet property="webView2" destination="Iu1-yU-3WR" id="4Dg-1X-2kk"/>
+                        <outlet property="webView3" destination="080-Wf-eRf" id="eiz-Yk-7CV"/>
+                        <outlet property="webView4" destination="IQ8-jU-0wq" id="y71-is-VTB"/>
+                        <outlet property="webView5" destination="leS-25-i3y" id="WPc-OU-s26"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nga-cA-Xzx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="839" y="1269"/>
         </scene>
     </scenes>
     <resources>

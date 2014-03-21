@@ -116,7 +116,7 @@
 
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView {
     
-    float settingDissolve = 300.0;
+    float settingDissolve = 400.0;
     
     if(scrollView.contentOffset.y >= 0 && scrollView.contentOffset.y <= settingDissolve) {
         float percent = (scrollView.contentOffset.y / settingDissolve);

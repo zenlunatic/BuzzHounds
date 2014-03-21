@@ -27,9 +27,17 @@
     return self;
 }
 
+- (void)viewWillAppear:(BOOL)animated
+{
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    _YouTubeScrollView.contentSize = CGSizeMake(1375, 155);
+    _YouTubeScrollView.backgroundColor = [UIColor clearColor];
+
     soundFilePath = [[NSBundle mainBundle] pathForResource:@"deathrace-hardrock" ofType:@"mp3"];
     
     NSString *fullURL = @"http://www.reverbnation.com/widget_code/html_widget/artist_2905165";
@@ -38,7 +46,6 @@
     NSURLRequest *requestObj = [NSURLRequest requestWithURL:url];
     [_webGigsView loadRequest:requestObj];
     
-    [self embedYouTube];
 }
 
 - (void)didReceiveMemoryWarning
@@ -84,21 +91,6 @@
 
 }
 
-- (void)embedYouTube
-{
-    NSString *embedHTML =[NSString stringWithFormat:@"\
-                          <html><head>\
-                          <style type=\"text/css\">\
-                          body {\
-                          background-color: transparent;\
-                          color: blue;\
-                          }\
-                          </style>\
-                          </head><body style=\"margin:0\">\
-                          <iframe width=\"285\" height=\"215\" src=\"http://www.youtube.com/embed/yrwp3zZzzm0\" frameborder=\"0\"></iframe>\
-                          </body></html>"];
-    [_videoView loadHTMLString:embedHTML baseURL:nil];
-}
 
 
 

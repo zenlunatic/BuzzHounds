@@ -17,6 +17,7 @@
 		04F1881618DB7CD6004515D2 /* buzzhoundslogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 04F1881518DB7CD6004515D2 /* buzzhoundslogo.png */; };
 		04F1881818DBA27C004515D2 /* standup.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 04F1881718DBA27C004515D2 /* standup.mp3 */; };
 		04F1881A18DBAF8D004515D2 /* band.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 04F1881918DBAF8D004515D2 /* band.jpg */; };
+		04F1881D18DC7906004515D2 /* PicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F1881C18DC7906004515D2 /* PicViewController.m */; };
 		5856843A177E52F1006FEB91 /* UIImage+Alpha.m in Sources */ = {isa = PBXBuildFile; fileRef = 58568435177E52F1006FEB91 /* UIImage+Alpha.m */; };
 		5856843B177E52F1006FEB91 /* UIImage+Resize.m in Sources */ = {isa = PBXBuildFile; fileRef = 58568437177E52F1006FEB91 /* UIImage+Resize.m */; };
 		5856843C177E52F1006FEB91 /* UIImage+RoundedCorner.m in Sources */ = {isa = PBXBuildFile; fileRef = 58568439177E52F1006FEB91 /* UIImage+RoundedCorner.m */; };
@@ -65,6 +66,8 @@
 		04F1881518DB7CD6004515D2 /* buzzhoundslogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = buzzhoundslogo.png; sourceTree = "<group>"; };
 		04F1881718DBA27C004515D2 /* standup.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = standup.mp3; sourceTree = "<group>"; };
 		04F1881918DBAF8D004515D2 /* band.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = band.jpg; sourceTree = "<group>"; };
+		04F1881B18DC7906004515D2 /* PicViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PicViewController.h; sourceTree = "<group>"; };
+		04F1881C18DC7906004515D2 /* PicViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PicViewController.m; sourceTree = "<group>"; };
 		58568434177E52F1006FEB91 /* UIImage+Alpha.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Alpha.h"; sourceTree = "<group>"; };
 		58568435177E52F1006FEB91 /* UIImage+Alpha.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Alpha.m"; sourceTree = "<group>"; };
 		58568436177E52F1006FEB91 /* UIImage+Resize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Resize.h"; sourceTree = "<group>"; };
@@ -186,6 +189,8 @@
 				04F1881018DB67FC004515D2 /* MainContentViewController.m */,
 				04F1881218DB6B03004515D2 /* WebsiteViewController.h */,
 				04F1881318DB6B03004515D2 /* WebsiteViewController.m */,
+				04F1881B18DC7906004515D2 /* PicViewController.h */,
+				04F1881C18DC7906004515D2 /* PicViewController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -400,6 +405,7 @@
 				589231CD177E00D20075205C /* AppDelegate.m in Sources */,
 				589231D9177E00D20075205C /* ViewController.m in Sources */,
 				58EBAB09177E0B4B00D16B68 /* UIImage+ImageEffects.m in Sources */,
+				04F1881D18DC7906004515D2 /* PicViewController.m in Sources */,
 				04F1881118DB67FC004515D2 /* MainContentViewController.m in Sources */,
 				58EBAB0C177E0B4B00D16B68 /* CBGFlickrManager.m in Sources */,
 				58EBAB0D177E0B4B00D16B68 /* CBGLocationManager.m in Sources */,

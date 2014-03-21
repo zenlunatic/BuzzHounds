@@ -9,10 +9,11 @@
 #import <UIKit/UIKit.h>
 #import <AVFoundation/AVFoundation.h>
 
-@interface MainContentViewController : UIViewController<AVAudioPlayerDelegate>
+@interface MainContentViewController : UIViewController<AVAudioPlayerDelegate, UIScrollViewDelegate>
 
 - (IBAction)didTouchMainLogo:(id)sender;
 @property (strong, nonatomic) IBOutlet UIWebView *webGigsView;
-@property (strong, nonatomic) IBOutlet UIWebView *videoView;
+@property (strong, nonatomic) IBOutlet UIScrollView *YouTubeScrollView;
+
 
 @end
