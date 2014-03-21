@@ -151,11 +151,11 @@
                                             <segue destination="8tW-KA-uCP" kind="push" id="Wr7-fU-zoi"/>
                                         </connections>
                                     </button>
-                                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" directionalLockEnabled="YES" bounces="NO" pagingEnabled="YES" showsVerticalScrollIndicator="NO" id="1sz-xA-YhE">
-                                        <rect key="frame" x="25" y="571" width="275" height="155"/>
+                                    <scrollView opaque="NO" clipsSubviews="YES" contentMode="scaleAspectFit" directionalLockEnabled="YES" bounces="NO" pagingEnabled="YES" showsVerticalScrollIndicator="NO" bouncesZoom="NO" id="1sz-xA-YhE">
+                                        <rect key="frame" x="25" y="571" width="275" height="154"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                         <subviews>
-                                            <containerView contentMode="scaleToFill" id="eyR-G8-pvu">
+                                            <containerView opaque="NO" contentMode="scaleToFill" id="eyR-G8-pvu">
                                                 <rect key="frame" x="0.0" y="0.0" width="1375" height="155"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -165,6 +165,7 @@
                                             </containerView>
                                         </subviews>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <connections>
                                             <outlet property="delegate" destination="YiS-HA-V0D" id="X6m-Lv-L5J"/>
                                         </connections>
