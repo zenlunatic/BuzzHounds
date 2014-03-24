@@ -18,6 +18,7 @@
 		04F1881818DBA27C004515D2 /* standup.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 04F1881718DBA27C004515D2 /* standup.mp3 */; };
 		04F1881A18DBAF8D004515D2 /* band.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 04F1881918DBAF8D004515D2 /* band.jpg */; };
 		04F1881D18DC7906004515D2 /* PicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F1881C18DC7906004515D2 /* PicViewController.m */; };
+		04F1881F18E06728004515D2 /* BH_WOMS_COVER_FINAL.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 04F1881E18E06728004515D2 /* BH_WOMS_COVER_FINAL.jpg */; };
 		5856843A177E52F1006FEB91 /* UIImage+Alpha.m in Sources */ = {isa = PBXBuildFile; fileRef = 58568435177E52F1006FEB91 /* UIImage+Alpha.m */; };
 		5856843B177E52F1006FEB91 /* UIImage+Resize.m in Sources */ = {isa = PBXBuildFile; fileRef = 58568437177E52F1006FEB91 /* UIImage+Resize.m */; };
 		5856843C177E52F1006FEB91 /* UIImage+RoundedCorner.m in Sources */ = {isa = PBXBuildFile; fileRef = 58568439177E52F1006FEB91 /* UIImage+RoundedCorner.m */; };
@@ -68,6 +69,7 @@
 		04F1881918DBAF8D004515D2 /* band.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = band.jpg; sourceTree = "<group>"; };
 		04F1881B18DC7906004515D2 /* PicViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PicViewController.h; sourceTree = "<group>"; };
 		04F1881C18DC7906004515D2 /* PicViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PicViewController.m; sourceTree = "<group>"; };
+		04F1881E18E06728004515D2 /* BH_WOMS_COVER_FINAL.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = BH_WOMS_COVER_FINAL.jpg; sourceTree = "<group>"; };
 		58568434177E52F1006FEB91 /* UIImage+Alpha.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Alpha.h"; sourceTree = "<group>"; };
 		58568435177E52F1006FEB91 /* UIImage+Alpha.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Alpha.m"; sourceTree = "<group>"; };
 		58568436177E52F1006FEB91 /* UIImage+Resize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Resize.h"; sourceTree = "<group>"; };
@@ -158,6 +160,7 @@
 		04F1880B18DB6390004515D2 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				04F1881E18E06728004515D2 /* BH_WOMS_COVER_FINAL.jpg */,
 				04F1881918DBAF8D004515D2 /* band.jpg */,
 				04F1881518DB7CD6004515D2 /* buzzhoundslogo.png */,
 				04F187BE18D7C098004515D2 /* BuzzHoundsFlag.jpg */,
@@ -389,6 +392,7 @@
 				58EBAB2A177E0C1500D16B68 /* StockPhotos in Resources */,
 				04F187C018D7C098004515D2 /* BuzzHoundsFlag.jpg in Resources */,
 				5871863F177F4E1A004EFB15 /* Icon-57x57.png in Resources */,
+				04F1881F18E06728004515D2 /* BH_WOMS_COVER_FINAL.jpg in Resources */,
 				04F1881818DBA27C004515D2 /* standup.mp3 in Resources */,
 				58718640177F4E1A004EFB15 /* Icon-57x57@2x.png in Resources */,
 			);

@@ -15,5 +15,6 @@
 @property (strong, nonatomic) IBOutlet UIWebView *webGigsView;
 @property (strong, nonatomic) IBOutlet UIScrollView *YouTubeScrollView;
 
+- (IBAction)didClickDownload:(id)sender;
 
 @end

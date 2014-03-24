@@ -35,7 +35,7 @@
 {
     [super viewDidLoad];
     
-    _YouTubeScrollView.contentSize = CGSizeMake(1375, 155);
+    _YouTubeScrollView.contentSize = CGSizeMake(2520, 158);
     _YouTubeScrollView.backgroundColor = [UIColor clearColor];
 
     soundFilePath = [[NSBundle mainBundle] pathForResource:@"deathrace-hardrock" ofType:@"mp3"];
@@ -123,5 +123,9 @@
         }
     }
     
+}
+- (IBAction)didClickDownload:(id)sender {
+    NSString *downloadURL = @"https://itunes.apple.com/us/album/weapons-of-mass-seduction/id597662543";
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:downloadURL]];
 }
 @end
