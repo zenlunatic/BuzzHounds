@@ -5,10 +5,11 @@
 
 //Objective Flickr API
 
-#warning Change Flickr API & SECRET
+//#define OBJECTIVE_FLICKR_API_KEY @"7ee7a87ddf9c099220728b4e938c3d9c"
+//#define OBJECTIVE_FLICKR_API_SHARED_SECRET @"f8abcc7287f55854"
 
-#define OBJECTIVE_FLICKR_API_KEY @"Ch@ngeMe"
-#define OBJECTIVE_FLICKR_API_SHARED_SECRET @"Ch@ngeMe"
+#define OBJECTIVE_FLICKR_API_KEY @"ChangeMe"
+#define OBJECTIVE_FLICKR_API_SHARED_SECRET @"ChangeMe"
 
 /*
  <licenses>

@@ -139,6 +139,11 @@
     }
 }
 
+- (IBAction)didClickReverbNation:(id)sender {
+    NSString *downloadURL = @"http://www.reverbnation.com/thebuzzhounds";
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:downloadURL]];
+}
+
 
 
 #pragma mark - Navigation Delegate

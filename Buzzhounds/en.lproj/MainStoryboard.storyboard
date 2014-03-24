@@ -122,7 +122,7 @@
                                         </connections>
                                     </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="ow7-3N-7vX">
-                                        <rect key="frame" x="64" y="999" width="123" height="67"/>
+                                        <rect key="frame" x="51" y="993" width="123" height="67"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" title="News" image="BuzzHoundsFlag.jpg">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -144,7 +144,7 @@
                                     </button>
                                     <scrollView opaque="NO" clipsSubviews="YES" contentMode="scaleAspectFit" bounces="NO" alwaysBounceHorizontal="YES" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" id="1sz-xA-YhE">
                                         <rect key="frame" x="20" y="552" width="280" height="157"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES"/>
                                         <subviews>
                                             <containerView opaque="NO" contentMode="scaleToFill" id="eyR-G8-pvu">
                                                 <rect key="frame" x="0.0" y="0.0" width="2520" height="158"/>
@@ -192,7 +192,7 @@
                                             <action selector="didClickDownload:" destination="YiS-HA-V0D" eventType="touchUpInside" id="DAo-DB-QXy"/>
                                         </connections>
                                     </button>
-                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Band" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="rPD-NZ-nbN">
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Band Bio" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="rPD-NZ-nbN">
                                         <rect key="frame" x="20" y="751" width="280" height="21"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="20"/>
@@ -200,13 +200,23 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="ISY-kY-s5F">
-                                        <rect key="frame" x="195" y="999" width="67" height="67"/>
+                                        <rect key="frame" x="197" y="993" width="67" height="67"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" image="facebook.png">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
                                             <action selector="didClickFacebook:" destination="YiS-HA-V0D" eventType="touchUpInside" id="trf-mf-lHV"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Rng-tL-Ymg">
+                                        <rect key="frame" x="89" y="1074" width="150" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="reverbnation.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="didClickReverbNation:" destination="YiS-HA-V0D" eventType="touchUpInside" id="zfA-Jl-G9a"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -373,6 +383,7 @@ The Buzzhounds have taken Chicago's live scene by storm, creating a loyal follow
         <image name="band.jpg" width="960" height="557"/>
         <image name="buzzhoundslogo.png" width="475" height="224"/>
         <image name="facebook.png" width="67" height="67"/>
+        <image name="reverbnation.png" width="150" height="30"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>

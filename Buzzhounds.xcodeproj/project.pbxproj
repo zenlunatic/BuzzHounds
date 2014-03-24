@@ -7,9 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		04F187BC18D7C042004515D2 /* BuzzHoundsClown.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 04F187BB18D7C042004515D2 /* BuzzHoundsClown.jpg */; };
-		04F187C018D7C098004515D2 /* BuzzHoundsFlag.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 04F187BE18D7C098004515D2 /* BuzzHoundsFlag.jpg */; };
-		04F187C418D7C0AC004515D2 /* deathrace-hardrock.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 04F187C318D7C0AC004515D2 /* deathrace-hardrock.mp3 */; };
 		04F1880718DB632A004515D2 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04F1880618DB632A004515D2 /* AudioToolbox.framework */; };
 		04F1880918DB6333004515D2 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04F1880818DB6333004515D2 /* AVFoundation.framework */; };
 		04F1881118DB67FC004515D2 /* MainContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F1881018DB67FC004515D2 /* MainContentViewController.m */; };
@@ -21,6 +18,14 @@
 		04F1881F18E06728004515D2 /* BH_WOMS_COVER_FINAL.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 04F1881E18E06728004515D2 /* BH_WOMS_COVER_FINAL.jpg */; };
 		04F1882318E0C707004515D2 /* FadeAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F1882218E0C707004515D2 /* FadeAnimator.m */; };
 		04F1882518E0D2ED004515D2 /* facebook.png in Resources */ = {isa = PBXBuildFile; fileRef = 04F1882418E0D2ED004515D2 /* facebook.png */; };
+		04F1882718E0DB0F004515D2 /* reverbnation.png in Resources */ = {isa = PBXBuildFile; fileRef = 04F1882618E0DB0F004515D2 /* reverbnation.png */; };
+		04F1882A18E0DD0C004515D2 /* BuzzHoundsClown.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 04F1882818E0DD0C004515D2 /* BuzzHoundsClown.jpg */; };
+		04F1882B18E0DD0C004515D2 /* BuzzHoundsFlag.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 04F1882918E0DD0C004515D2 /* BuzzHoundsFlag.jpg */; };
+		04F1882D18E0DD1E004515D2 /* deathrace-hardrock.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 04F1882C18E0DD1E004515D2 /* deathrace-hardrock.mp3 */; };
+		04F1883318E0EB95004515D2 /* 02-06-14.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 04F1882F18E0EB95004515D2 /* 02-06-14.jpg */; };
+		04F1883418E0EB95004515D2 /* 03-09-14.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 04F1883018E0EB95004515D2 /* 03-09-14.jpg */; };
+		04F1883518E0EB95004515D2 /* 02-22-14.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 04F1883118E0EB95004515D2 /* 02-22-14.jpg */; };
+		04F1883618E0EB95004515D2 /* 03-28-14.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 04F1883218E0EB95004515D2 /* 03-28-14.jpg */; };
 		5856843A177E52F1006FEB91 /* UIImage+Alpha.m in Sources */ = {isa = PBXBuildFile; fileRef = 58568435177E52F1006FEB91 /* UIImage+Alpha.m */; };
 		5856843B177E52F1006FEB91 /* UIImage+Resize.m in Sources */ = {isa = PBXBuildFile; fileRef = 58568437177E52F1006FEB91 /* UIImage+Resize.m */; };
 		5856843C177E52F1006FEB91 /* UIImage+RoundedCorner.m in Sources */ = {isa = PBXBuildFile; fileRef = 58568439177E52F1006FEB91 /* UIImage+RoundedCorner.m */; };
@@ -57,9 +62,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		04F187BB18D7C042004515D2 /* BuzzHoundsClown.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = BuzzHoundsClown.jpg; path = CBG/BuzzHoundsClown.jpg; sourceTree = "<group>"; };
-		04F187BE18D7C098004515D2 /* BuzzHoundsFlag.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = BuzzHoundsFlag.jpg; path = CBG/BuzzHoundsFlag.jpg; sourceTree = "<group>"; };
-		04F187C318D7C0AC004515D2 /* deathrace-hardrock.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "deathrace-hardrock.mp3"; path = "CBG/deathrace-hardrock.mp3"; sourceTree = "<group>"; };
 		04F1880618DB632A004515D2 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		04F1880818DB6333004515D2 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		04F1880F18DB67FC004515D2 /* MainContentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainContentViewController.h; sourceTree = "<group>"; };
@@ -75,6 +77,14 @@
 		04F1882118E0C707004515D2 /* FadeAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FadeAnimator.h; sourceTree = "<group>"; };
 		04F1882218E0C707004515D2 /* FadeAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FadeAnimator.m; sourceTree = "<group>"; };
 		04F1882418E0D2ED004515D2 /* facebook.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = facebook.png; sourceTree = "<group>"; };
+		04F1882618E0DB0F004515D2 /* reverbnation.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = reverbnation.png; sourceTree = "<group>"; };
+		04F1882818E0DD0C004515D2 /* BuzzHoundsClown.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = BuzzHoundsClown.jpg; sourceTree = "<group>"; };
+		04F1882918E0DD0C004515D2 /* BuzzHoundsFlag.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = BuzzHoundsFlag.jpg; sourceTree = "<group>"; };
+		04F1882C18E0DD1E004515D2 /* deathrace-hardrock.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "deathrace-hardrock.mp3"; sourceTree = "<group>"; };
+		04F1882F18E0EB95004515D2 /* 02-06-14.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "02-06-14.jpg"; sourceTree = "<group>"; };
+		04F1883018E0EB95004515D2 /* 03-09-14.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "03-09-14.jpg"; sourceTree = "<group>"; };
+		04F1883118E0EB95004515D2 /* 02-22-14.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "02-22-14.jpg"; sourceTree = "<group>"; };
+		04F1883218E0EB95004515D2 /* 03-28-14.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "03-28-14.jpg"; sourceTree = "<group>"; };
 		58568434177E52F1006FEB91 /* UIImage+Alpha.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Alpha.h"; sourceTree = "<group>"; };
 		58568435177E52F1006FEB91 /* UIImage+Alpha.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Alpha.m"; sourceTree = "<group>"; };
 		58568436177E52F1006FEB91 /* UIImage+Resize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Resize.h"; sourceTree = "<group>"; };
@@ -156,8 +166,8 @@
 		04F1880A18DB6388004515D2 /* Audio */ = {
 			isa = PBXGroup;
 			children = (
+				04F1882C18E0DD1E004515D2 /* deathrace-hardrock.mp3 */,
 				04F1881718DBA27C004515D2 /* standup.mp3 */,
-				04F187C318D7C0AC004515D2 /* deathrace-hardrock.mp3 */,
 			);
 			name = Audio;
 			sourceTree = "<group>";
@@ -165,12 +175,15 @@
 		04F1880B18DB6390004515D2 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				04F1883718E0EBFD004515D2 /* Band */,
+				04F1882E18E0EB7D004515D2 /* Posters */,
+				04F1882818E0DD0C004515D2 /* BuzzHoundsClown.jpg */,
+				04F1882918E0DD0C004515D2 /* BuzzHoundsFlag.jpg */,
+				04F1882618E0DB0F004515D2 /* reverbnation.png */,
 				04F1882418E0D2ED004515D2 /* facebook.png */,
 				04F1881E18E06728004515D2 /* BH_WOMS_COVER_FINAL.jpg */,
 				04F1881918DBAF8D004515D2 /* band.jpg */,
 				04F1881518DB7CD6004515D2 /* buzzhoundslogo.png */,
-				04F187BE18D7C098004515D2 /* BuzzHoundsFlag.jpg */,
-				04F187BB18D7C042004515D2 /* BuzzHoundsClown.jpg */,
 			);
 			name = Images;
 			sourceTree = "<group>";
@@ -211,6 +224,24 @@
 				04F1882218E0C707004515D2 /* FadeAnimator.m */,
 			);
 			name = Transitions;
+			sourceTree = "<group>";
+		};
+		04F1882E18E0EB7D004515D2 /* Posters */ = {
+			isa = PBXGroup;
+			children = (
+				04F1882F18E0EB95004515D2 /* 02-06-14.jpg */,
+				04F1883018E0EB95004515D2 /* 03-09-14.jpg */,
+				04F1883118E0EB95004515D2 /* 02-22-14.jpg */,
+				04F1883218E0EB95004515D2 /* 03-28-14.jpg */,
+			);
+			name = Posters;
+			sourceTree = "<group>";
+		};
+		04F1883718E0EBFD004515D2 /* Band */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Band;
 			sourceTree = "<group>";
 		};
 		589231B0177E00D20075205C = {
@@ -402,17 +433,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				04F1882518E0D2ED004515D2 /* facebook.png in Resources */,
+				04F1883518E0EB95004515D2 /* 02-22-14.jpg in Resources */,
+				04F1883418E0EB95004515D2 /* 03-09-14.jpg in Resources */,
+				04F1882A18E0DD0C004515D2 /* BuzzHoundsClown.jpg in Resources */,
+				04F1882B18E0DD0C004515D2 /* BuzzHoundsFlag.jpg in Resources */,
 				04F1881A18DBAF8D004515D2 /* band.jpg in Resources */,
-				04F187C418D7C0AC004515D2 /* deathrace-hardrock.mp3 in Resources */,
+				04F1882718E0DB0F004515D2 /* reverbnation.png in Resources */,
+				04F1883618E0EB95004515D2 /* 03-28-14.jpg in Resources */,
 				589231C7177E00D20075205C /* InfoPlist.strings in Resources */,
 				589231CF177E00D20075205C /* Default.png in Resources */,
 				589231D1177E00D20075205C /* Default@2x.png in Resources */,
+				04F1883318E0EB95004515D2 /* 02-06-14.jpg in Resources */,
 				589231D3177E00D20075205C /* Default-568h@2x.png in Resources */,
 				04F1881618DB7CD6004515D2 /* buzzhoundslogo.png in Resources */,
+				04F1882D18E0DD1E004515D2 /* deathrace-hardrock.mp3 in Resources */,
 				589231D6177E00D20075205C /* MainStoryboard.storyboard in Resources */,
-				04F187BC18D7C042004515D2 /* BuzzHoundsClown.jpg in Resources */,
 				58EBAB2A177E0C1500D16B68 /* StockPhotos in Resources */,
-				04F187C018D7C098004515D2 /* BuzzHoundsFlag.jpg in Resources */,
 				5871863F177F4E1A004EFB15 /* Icon-57x57.png in Resources */,
 				04F1881F18E06728004515D2 /* BH_WOMS_COVER_FINAL.jpg in Resources */,
 				04F1881818DBA27C004515D2 /* standup.mp3 in Resources */,

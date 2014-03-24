@@ -20,6 +20,6 @@
 
 - (IBAction)didClickDownload:(id)sender;
 - (IBAction)didClickFacebook:(id)sender;
-
+- (IBAction)didClickReverbNation:(id)sender;
 
 @end
