@@ -6,7 +6,7 @@
 //  Copyright (c) 2013 Justin M Fischer. All rights reserved.
 //
 
-
+#import "FadeAnimator.h"
 
 @interface ViewController : UIViewController<UIScrollViewDelegate>
 
@@ -19,5 +19,6 @@
 @property(nonatomic, strong) IBOutlet UIScrollView *scrollView;
 
 - (IBAction) launchFlickrUserPhotoWebPage:(id) sender;
+
 
 @end

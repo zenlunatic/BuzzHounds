@@ -19,6 +19,8 @@
 		04F1881A18DBAF8D004515D2 /* band.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 04F1881918DBAF8D004515D2 /* band.jpg */; };
 		04F1881D18DC7906004515D2 /* PicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F1881C18DC7906004515D2 /* PicViewController.m */; };
 		04F1881F18E06728004515D2 /* BH_WOMS_COVER_FINAL.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 04F1881E18E06728004515D2 /* BH_WOMS_COVER_FINAL.jpg */; };
+		04F1882318E0C707004515D2 /* FadeAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F1882218E0C707004515D2 /* FadeAnimator.m */; };
+		04F1882518E0D2ED004515D2 /* facebook.png in Resources */ = {isa = PBXBuildFile; fileRef = 04F1882418E0D2ED004515D2 /* facebook.png */; };
 		5856843A177E52F1006FEB91 /* UIImage+Alpha.m in Sources */ = {isa = PBXBuildFile; fileRef = 58568435177E52F1006FEB91 /* UIImage+Alpha.m */; };
 		5856843B177E52F1006FEB91 /* UIImage+Resize.m in Sources */ = {isa = PBXBuildFile; fileRef = 58568437177E52F1006FEB91 /* UIImage+Resize.m */; };
 		5856843C177E52F1006FEB91 /* UIImage+RoundedCorner.m in Sources */ = {isa = PBXBuildFile; fileRef = 58568439177E52F1006FEB91 /* UIImage+RoundedCorner.m */; };
@@ -70,6 +72,9 @@
 		04F1881B18DC7906004515D2 /* PicViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PicViewController.h; sourceTree = "<group>"; };
 		04F1881C18DC7906004515D2 /* PicViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PicViewController.m; sourceTree = "<group>"; };
 		04F1881E18E06728004515D2 /* BH_WOMS_COVER_FINAL.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = BH_WOMS_COVER_FINAL.jpg; sourceTree = "<group>"; };
+		04F1882118E0C707004515D2 /* FadeAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FadeAnimator.h; sourceTree = "<group>"; };
+		04F1882218E0C707004515D2 /* FadeAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FadeAnimator.m; sourceTree = "<group>"; };
+		04F1882418E0D2ED004515D2 /* facebook.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = facebook.png; sourceTree = "<group>"; };
 		58568434177E52F1006FEB91 /* UIImage+Alpha.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Alpha.h"; sourceTree = "<group>"; };
 		58568435177E52F1006FEB91 /* UIImage+Alpha.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Alpha.m"; sourceTree = "<group>"; };
 		58568436177E52F1006FEB91 /* UIImage+Resize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Resize.h"; sourceTree = "<group>"; };
@@ -160,6 +165,7 @@
 		04F1880B18DB6390004515D2 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				04F1882418E0D2ED004515D2 /* facebook.png */,
 				04F1881E18E06728004515D2 /* BH_WOMS_COVER_FINAL.jpg */,
 				04F1881918DBAF8D004515D2 /* band.jpg */,
 				04F1881518DB7CD6004515D2 /* buzzhoundslogo.png */,
@@ -198,6 +204,15 @@
 			name = Controllers;
 			sourceTree = "<group>";
 		};
+		04F1882018E0C6D9004515D2 /* Transitions */ = {
+			isa = PBXGroup;
+			children = (
+				04F1882118E0C707004515D2 /* FadeAnimator.h */,
+				04F1882218E0C707004515D2 /* FadeAnimator.m */,
+			);
+			name = Transitions;
+			sourceTree = "<group>";
+		};
 		589231B0177E00D20075205C = {
 			isa = PBXGroup;
 			children = (
@@ -234,6 +249,7 @@
 		589231C2177E00D20075205C /* Buzzhounds */ = {
 			isa = PBXGroup;
 			children = (
+				04F1882018E0C6D9004515D2 /* Transitions */,
 				04F1880E18DB63FF004515D2 /* Controllers */,
 				04F1880D18DB63F8004515D2 /* Models */,
 				04F1880C18DB63ED004515D2 /* Views */,
@@ -357,6 +373,11 @@
 			attributes = {
 				LastUpgradeCheck = 0460;
 				ORGANIZATIONNAME = "";
+				TargetAttributes = {
+					589231B8177E00D20075205C = {
+						DevelopmentTeam = A7VUMK848R;
+					};
+				};
 			};
 			buildConfigurationList = 589231B4177E00D20075205C /* Build configuration list for PBXProject "Buzzhounds" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -380,6 +401,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04F1882518E0D2ED004515D2 /* facebook.png in Resources */,
 				04F1881A18DBAF8D004515D2 /* band.jpg in Resources */,
 				04F187C418D7C0AC004515D2 /* deathrace-hardrock.mp3 in Resources */,
 				589231C7177E00D20075205C /* InfoPlist.strings in Resources */,
@@ -425,6 +447,7 @@
 				58EBAB16177E0B4B00D16B68 /* OFXMLMapper.m in Sources */,
 				5856843A177E52F1006FEB91 /* UIImage+Alpha.m in Sources */,
 				5856843B177E52F1006FEB91 /* UIImage+Resize.m in Sources */,
+				04F1882318E0C707004515D2 /* FadeAnimator.m in Sources */,
 				5856843C177E52F1006FEB91 /* UIImage+RoundedCorner.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -510,10 +533,13 @@
 		589231DD177E00D20075205C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Buzzhounds/Buzzhounds-Prefix.pch";
 				INFOPLIST_FILE = "Buzzhounds/Buzzhounds-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -521,10 +547,13 @@
 		589231DE177E00D20075205C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Buzzhounds/Buzzhounds-Prefix.pch";
 				INFOPLIST_FILE = "Buzzhounds/Buzzhounds-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

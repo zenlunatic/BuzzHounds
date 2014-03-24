@@ -26,7 +26,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    NSString *fullURL = @"http://buzzhounds.net/Site_4/News/News.html";
+    NSString *fullURL = @"http://buzzhounds.net";
     NSURL *url = [NSURL URLWithString:fullURL];
     NSURLRequest *requestObj = [NSURLRequest requestWithURL:url];
     [_webView loadRequest:requestObj];

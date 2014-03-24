@@ -34,7 +34,6 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
     _YouTubeScrollView.contentSize = CGSizeMake(2520, 158);
     _YouTubeScrollView.backgroundColor = [UIColor clearColor];
 
@@ -128,4 +127,35 @@
     NSString *downloadURL = @"https://itunes.apple.com/us/album/weapons-of-mass-seduction/id597662543";
     [[UIApplication sharedApplication] openURL:[NSURL URLWithString:downloadURL]];
 }
+
+- (IBAction)didClickFacebook:(id)sender {
+
+    
+    NSURL *facebookURL = [NSURL URLWithString:@"fb://profile/350835098300811"];
+    if ([[UIApplication sharedApplication] canOpenURL:facebookURL]) {
+        [[UIApplication sharedApplication] openURL:facebookURL];
+    } else {
+        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"http://facebook.com"]];
+    }
+}
+
+
+
+#pragma mark - Navigation Delegate
+
+
+// Report who is in charge of the animation
+- (id<UIViewControllerAnimatedTransitioning>)navigationController:(UINavigationController *)navigationController
+                                  animationControllerForOperation:(UINavigationControllerOperation)operation
+                                               fromViewController:(UITabBarController *)fromVC
+                                                 toViewController:(UIViewController *)toVC
+{
+    if (!self.fadeAnimator) {
+        self.fadeAnimator = [FadeAnimator new];
+    }
+    return self.fadeAnimator;
+}
+
+
+
 @end
