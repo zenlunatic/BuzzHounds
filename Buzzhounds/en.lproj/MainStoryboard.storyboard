@@ -64,7 +64,7 @@
                                 </connections>
                             </scrollView>
                         </subviews>
-                        <color key="backgroundColor" red="0.93550701530612246" green="0.80184105860885957" blue="0.54767756026957137" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </view>
                     <toolbarItems>
                         <barButtonItem width="308" style="plain" id="0Y2-Hv-RlD">
@@ -253,13 +253,13 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <mutableString key="text">The BuzzHounds
+                                <string key="text">The BuzzHounds
  
 The Buzzhounds have shared the stage with Les Paul, Buddy Guy, Chicago Blues Reunion, Canned Heat, Susan Tedeschi, Magic Slim, Collective Soul, Gov’t Mule, and many more.  They have written over 50 original songs in 2 years, and have performed on national TV + radio.  
  The BuzzHounds have been hard at work, since there inception in March of 2012. They cut their 11 song critically acclaimed full length debut, toured the regional circuit, released two singles, shot a full length HD concert video at Hard Rock Live Chicago, appeared on national television and radio, and have learned some new tricks first hand by playing with blues legends Buddy Guy, The Chicago Blues Reunion, and Magic Slim.  
 In a recent interview with Johnny “Fly” Affinito, (Illinois Entertainer and Chitownrocks online Magazine) front man Jeff Manga describes the Buzz Hounds as a blues trio with hints of an alternative soul.  Jeff speaks of the bands influences including Hendrix and Van Halen, and their quest to carry the torch of the Chicago blues and rock tradition into the future. http://tinyurl.com/chitownrock 
 The BuzzHounds are a power trio consisting of Jeff Manga (Vocals,Guitars) Eric Alvarez (Bass) and Shade Reed (Drums).   These three have played and toured with some of Chicago’s most notorious rock bands, including: Acumen Nation, Dye the Sky, Demented Ted, Honey, Lucius Warbaby, and Source.   
-The Buzzhounds have taken Chicago's live scene by storm, creating a loyal following by showcasing jaw dropping, high energy performances.  Catch the Buzzhounds live and in their element, in and around the city of Chicago.    The Buzz Hounds are currently working on their second record, a follow-up to their 2013 debut Weapons of Mass Seduction", due to be released in the spring of 2014. </mutableString>
+The Buzzhounds have taken Chicago's live scene by storm, creating a loyal following by showcasing jaw dropping, high energy performances.  Catch the Buzzhounds live and in their element, in and around the city of Chicago.    The Buzz Hounds are currently working on their second record, a follow-up to their 2013 debut Weapons of Mass Seduction", due to be released in the spring of 2014. </string>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>

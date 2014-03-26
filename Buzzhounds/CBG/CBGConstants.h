@@ -5,11 +5,11 @@
 
 //Objective Flickr API
 
-//#define OBJECTIVE_FLICKR_API_KEY @"7ee7a87ddf9c099220728b4e938c3d9c"
-//#define OBJECTIVE_FLICKR_API_SHARED_SECRET @"f8abcc7287f55854"
+#define OBJECTIVE_FLICKR_API_KEY @"7ee7a87ddf9c099220728b4e938c3d9c"
+#define OBJECTIVE_FLICKR_API_SHARED_SECRET @"f8abcc7287f55854"
 
-#define OBJECTIVE_FLICKR_API_KEY @"ChangeMe"
-#define OBJECTIVE_FLICKR_API_SHARED_SECRET @"ChangeMe"
+//#define OBJECTIVE_FLICKR_API_KEY @"ChangeMe"
+//#define OBJECTIVE_FLICKR_API_SHARED_SECRET @"ChangeMe"
 
 /*
  <licenses>
@@ -30,9 +30,9 @@
 #define kLocationQuitTimeoutDurationInSeconds 10
 
 //Flickr
-#define KFlickrSsearchTags @"bike"
-#define KFlickrSearchLicense @"4,5,6,7"
-#define KFlickrSearchRadiusInMiles @"10"
+#define KFlickrSsearchTags @"Buzzhounds, art"
+#define KFlickrSearchLicense @"0"
+#define KFlickrSearchRadiusInMiles @"20"
 #define kFlickrSearchInvalidateCacheTimeoutDurationInSeconds 900 //15min (60 * 15)
 #define kFlickrSearchQuitTimeoutDurationInSeconds 15
 

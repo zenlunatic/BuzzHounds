@@ -77,10 +77,32 @@ static CBGFlickrManager *sharedManager = nil;
     if (![self.flickrRequest isRunning]) {
         ((FlickrAPIRequestSessionInfo *)self.flickrRequest.sessionInfo).flickrAPIRequestType = FlickrAPIRequestPhotoSearch;
         
-        NSString *lat = [[NSNumber numberWithDouble:[CBGLocationManager sharedManager].locationBestEffort.coordinate.latitude] stringValue];
-        NSString *lon = [[NSNumber numberWithDouble:[CBGLocationManager sharedManager].locationBestEffort.coordinate.longitude] stringValue];
+//        NSString *lat = [[NSNumber numberWithDouble:[CBGLocationManager sharedManager].locationBestEffort.coordinate.latitude] stringValue];
+//        NSString *lon = [[NSNumber numberWithDouble:[CBGLocationManager sharedManager].locationBestEffort.coordinate.longitude] stringValue];
         
-        [self.flickrRequest callAPIMethodWithGET:@"flickr.photos.search" arguments:[NSDictionary dictionaryWithObjectsAndKeys:lat, @"lat", lon, @"lon", KFlickrSearchRadiusInMiles, @"radius", @"mi", @"radius_units", KFlickrSsearchTags, @"tags", @"tag_mode", @"any", KFlickrSearchLicense, @"license", @"500", @"per_page", nil]];
+//        NSString *lat = @"42.033361";
+//        NSString *lon = @"-88.083406";
+        
+//        [self.flickrRequest callAPIMethodWithGET:@"flickr.photos.search"
+//                                       arguments:[NSDictionary dictionaryWithObjectsAndKeys:
+//                                                  lat, @"lat",
+//                                                  lon, @"lon",
+//                                                  KFlickrSearchRadiusInMiles, @"radius",
+//                                                  @"mi", @"radius_units",
+//                                                  KFlickrSsearchTags, @"tags",
+//                                                  @"tag_mode", @"any",
+//                                                  KFlickrSearchLicense, @"license",
+//                                                  @"500", @"per_page",
+//                                                  nil]];
+        
+        [self.flickrRequest callAPIMethodWithGET:@"flickr.photos.search"
+                                       arguments:[NSDictionary dictionaryWithObjectsAndKeys:
+                                                  @"ZenLunatic74", @"username",
+                                                  KFlickrSsearchTags, @"tags",
+                                                  @"tag_mode", @"any",
+                                                  KFlickrSearchLicense, @"license",
+                                                  @"500", @"per_page",
+                                                  nil]];
     }
 }
 

@@ -48,42 +48,23 @@
 //        [self crossDissolvePhotos:photos withTitle:@""];
 //    }];
     
-//    //Retrieve location and content from Flickr
-//    [self retrieveLocationAndUpdateBackgroundPhoto];
+    //Retrieve location and content from Flickr
+    [self retrieveLocationAndUpdateBackgroundPhoto];
 //    
 //    //Schedule updates
-//    self.timer = [NSTimer scheduledTimerWithTimeInterval:kTimerIntervalInSeconds target:self selector:@selector(retrieveLocationAndUpdateBackgroundPhoto)userInfo:nil repeats:YES];
+    self.timer = [NSTimer scheduledTimerWithTimeInterval:kTimerIntervalInSeconds target:self selector:@selector(retrieveLocationAndUpdateBackgroundPhoto)userInfo:nil repeats:YES];
 }
 
 - (void) retrieveLocationAndUpdateBackgroundPhoto {
     
-    //Location
-    [[CBGLocationManager sharedManager] locationRequest:^(CLLocation * location, NSError * error) {
-        
-        [self.activityIndicator startAnimating];
+    //Flickr
+    [[CBGFlickrManager sharedManager] randomPhotoRequest:^(FlickrRequestInfo * flickrRequestInfo, NSError * error) {
         
         if(!error) {
+            self.userPhotoWebPageURL = flickrRequestInfo.userPhotoWebPageURL;
             
-            //Flickr 
-            [[CBGFlickrManager sharedManager] randomPhotoRequest:^(FlickrRequestInfo * flickrRequestInfo, NSError * error) {
-                
-                if(!error) {
-                    self.userPhotoWebPageURL = flickrRequestInfo.userPhotoWebPageURL;
-                    
-                    [self crossDissolvePhotos:flickrRequestInfo.photos withTitle:flickrRequestInfo.userInfo];
-                    [self.activityIndicator stopAnimating];
-                } else {
-                    
-                    //Error : Stock photos
-                    [[CBGStockPhotoManager sharedManager] randomStockPhoto:^(CBGPhotos * photos) {
-                        [self crossDissolvePhotos:photos withTitle:@""];
-                    }];
-                    
-                    [self.activityIndicator stopAnimating];
-                    
-                    NSLog(@"Flickr: %@", error.description);
-                }
-            }];
+            [self crossDissolvePhotos:flickrRequestInfo.photos withTitle:flickrRequestInfo.userInfo];
+            [self.activityIndicator stopAnimating];
         } else {
             
             //Error : Stock photos
@@ -93,9 +74,11 @@
             
             [self.activityIndicator stopAnimating];
             
-            NSLog(@"Location: %@", error.description);
+            NSLog(@"Flickr: %@", error.description);
         }
     }];
+
+    
 }
 
 - (void) crossDissolvePhotos:(CBGPhotos *) photos withTitle:(NSString *) title {
