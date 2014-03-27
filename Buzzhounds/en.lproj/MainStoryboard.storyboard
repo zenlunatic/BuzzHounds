@@ -122,7 +122,7 @@
                                         </connections>
                                     </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="ow7-3N-7vX">
-                                        <rect key="frame" x="51" y="993" width="123" height="67"/>
+                                        <rect key="frame" x="27" y="979" width="123" height="67"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" title="News" image="BuzzHoundsFlag.jpg">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -200,9 +200,9 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="ISY-kY-s5F">
-                                        <rect key="frame" x="197" y="993" width="67" height="67"/>
+                                        <rect key="frame" x="164" y="979" width="65" height="65"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" image="facebook.png">
+                                        <state key="normal" image="FB.png">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
@@ -210,13 +210,43 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Rng-tL-Ymg">
-                                        <rect key="frame" x="89" y="1074" width="150" height="30"/>
+                                        <rect key="frame" x="42" y="1058" width="150" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" image="reverbnation.png">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
                                             <action selector="didClickReverbNation:" destination="YiS-HA-V0D" eventType="touchUpInside" id="zfA-Jl-G9a"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="YHl-mi-eUx">
+                                        <rect key="frame" x="256" y="105" width="44" height="46"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="icon-ios7-email-64.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="didClickEmail:" destination="YiS-HA-V0D" eventType="touchUpInside" id="vwg-rP-Whe"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="1H6-8H-ota">
+                                        <rect key="frame" x="216" y="1043" width="60" height="60"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="Youtube-2.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="didClickYouTube:" destination="YiS-HA-V0D" eventType="touchUpInside" id="AAZ-1a-Zbg"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="WCF-6J-g8O">
+                                        <rect key="frame" x="232" y="979" width="65" height="65"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Button" image="SonicbidsIcon.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="didClickPresskit:" destination="YiS-HA-V0D" eventType="touchUpInside" id="yEt-fR-d3n"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -380,9 +410,12 @@ The Buzzhounds have taken Chicago's live scene by storm, creating a loyal follow
     <resources>
         <image name="BH_WOMS_COVER_FINAL.jpg" width="450" height="450"/>
         <image name="BuzzHoundsFlag.jpg" width="800" height="516"/>
+        <image name="FB.png" width="512" height="512"/>
+        <image name="SonicbidsIcon.png" width="420" height="420"/>
+        <image name="Youtube-2.png" width="512" height="512"/>
         <image name="band.jpg" width="960" height="557"/>
         <image name="buzzhoundslogo.png" width="475" height="224"/>
-        <image name="facebook.png" width="67" height="67"/>
+        <image name="icon-ios7-email-64.png" width="64" height="64"/>
         <image name="reverbnation.png" width="150" height="30"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

@@ -9,8 +9,9 @@
 #import <UIKit/UIKit.h>
 #import <AVFoundation/AVFoundation.h>
 #import "FadeAnimator.h"
+#import <MessageUI/MessageUI.h>
 
-@interface MainContentViewController : UIViewController<AVAudioPlayerDelegate, UIScrollViewDelegate, UINavigationControllerDelegate>
+@interface MainContentViewController : UIViewController<AVAudioPlayerDelegate, UIScrollViewDelegate, UINavigationControllerDelegate, MFMailComposeViewControllerDelegate>
 
 - (IBAction)didTouchMainLogo:(id)sender;
 
@@ -21,5 +22,8 @@
 - (IBAction)didClickDownload:(id)sender;
 - (IBAction)didClickFacebook:(id)sender;
 - (IBAction)didClickReverbNation:(id)sender;
+- (IBAction)didClickEmail:(id)sender;
+- (IBAction)didClickPresskit:(id)sender;
+- (IBAction)didClickYouTube:(id)sender;
 
 @end

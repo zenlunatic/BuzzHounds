@@ -8,6 +8,7 @@
 
 #import "MainContentViewController.h"
 
+
 @interface MainContentViewController ()
 
 @end
@@ -135,7 +136,7 @@
     if ([[UIApplication sharedApplication] canOpenURL:facebookURL]) {
         [[UIApplication sharedApplication] openURL:facebookURL];
     } else {
-        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"http://facebook.com"]];
+        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"http://facebook.com/buzzhounds"]];
     }
 }
 
@@ -144,7 +145,56 @@
     [[UIApplication sharedApplication] openURL:[NSURL URLWithString:downloadURL]];
 }
 
+- (IBAction)didClickEmail:(id)sender {
+    
+    NSString* welcome = @"<p>Welcome to The BuzzHounds.</p>";
+    NSString* message = @"<p> For more information about the BuzzHounds:</p>";
+    NSString* facebook = @"<p><a href=\"http://www.facebook.com/buzzhounds\">Buzzhounds Facebook</a>  </p>";
+    NSString* presskit = @"<p><a href=\"http://www.sonicbids.com/band/thebuzzhounds\">Buzzhounds Presskit</a></p>";
+    NSString* bandpage = @"<p><a href=\"http://www.buzzhounds.net\">Buzzhounds Website</a> </p>";
+    NSString* youtube = @"<p><a href=\"http://www.youtube.com/user/kudathecat\">Buzzhounds Youtube</a> </p>";
+    NSString* reverbNation = @"<p><a href=\"http://www.reverbnation.com/thebuzzhounds\">Reverb Nation</a> </p>";
+    
+    
+    NSString *body = [NSString stringWithFormat:@"<html><body>%@<br /><br />%@%@%@%@%@%@</body></html>", welcome, message, facebook, presskit, bandpage, youtube, reverbNation];
+    
+    MFMailComposeViewController *emailer = [[MFMailComposeViewController alloc] init];
+    emailer.mailComposeDelegate = self;
+    [emailer setSubject:@"Buzzhounds"];
+    [emailer setMessageBody:body isHTML:YES];
 
+    
+    if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) {
+        emailer.modalPresentationStyle = UIModalPresentationPageSheet;
+    }
+    [self presentViewController:emailer animated:YES completion:nil];
+    
+}
+
+- (IBAction)didClickPresskit:(id)sender {
+    NSString *downloadURL = @"http://www.sonicbids.com/band/thebuzzhounds";
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:downloadURL]];
+}
+
+- (IBAction)didClickYouTube:(id)sender {
+    NSString *downloadURL = @"http://www.youtube.com/user/kudathecat";
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:downloadURL]];
+}
+
+- (void)mailComposeController:(MFMailComposeViewController*)controller didFinishWithResult:(MFMailComposeResult)result error:(NSError*)error
+{
+    if (result == MFMailComposeResultFailed) {
+        [self showMessage:@"Email failed to send. Please try again."];
+    }
+	[self dismissViewControllerAnimated:YES completion:nil];
+}
+
+
+-(void) showMessage: (NSString*)message
+{
+    UIAlertView *alert =[[UIAlertView alloc] initWithTitle:@"" message:message delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
+    [alert show];
+}
 
 #pragma mark - Navigation Delegate
 

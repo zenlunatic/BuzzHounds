@@ -36,6 +36,7 @@ static CBGStockPhotoManager *sharedManager = nil;
 }
 
 - (void) load {
+    
     NSArray *files = [[NSBundle mainBundle] pathsForResourcesOfType:nil inDirectory:@"StockPhotos"];
     
     self.stockPhotoSet = [[NSMutableSet alloc] init];

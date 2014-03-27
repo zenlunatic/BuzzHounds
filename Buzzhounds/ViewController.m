@@ -43,7 +43,7 @@
     photos.photoWithEffects = [photos.photo applyLightEffect];
     [self crossDissolvePhotos:photos withTitle:@""];
     
-//    //Initial stock photos from bundle
+    //Initial stock photos from bundle
 //    [[CBGStockPhotoManager sharedManager] randomStockPhoto:^(CBGPhotos * photos) {
 //        [self crossDissolvePhotos:photos withTitle:@""];
 //    }];
@@ -68,9 +68,14 @@
         } else {
             
             //Error : Stock photos
-            [[CBGStockPhotoManager sharedManager] randomStockPhoto:^(CBGPhotos * photos) {
-                [self crossDissolvePhotos:photos withTitle:@""];
-            }];
+            CBGPhotos *photos = [[CBGPhotos alloc] init];
+            photos.photo = [UIImage imageNamed: @"BuzzHoundsClown.jpg"];
+            photos.photoWithEffects = [photos.photo applyLightEffect];
+            [self crossDissolvePhotos:photos withTitle:@""];
+            
+//            [[CBGStockPhotoManager sharedManager] randomStockPhoto:^(CBGPhotos * photos) {
+//                [self crossDissolvePhotos:photos withTitle:@""];
+//            }];
             
             [self.activityIndicator stopAnimating];
             
