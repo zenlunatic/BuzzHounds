@@ -37,6 +37,7 @@ static CBGStockPhotoManager *sharedManager = nil;
 
 - (void) load {
     
+    
     NSArray *files = [[NSBundle mainBundle] pathsForResourcesOfType:nil inDirectory:@"StockPhotos"];
     
     self.stockPhotoSet = [[NSMutableSet alloc] init];
@@ -60,10 +61,10 @@ static CBGStockPhotoManager *sharedManager = nil;
     dispatch_queue_t main = dispatch_get_main_queue();
     
     dispatch_async(queue, ^{
-        int stockPhotoCount = ([self.stockPhotoSet count] - 1);
+        int stockPhotoCount = (int)([self.stockPhotoSet count] - 1);
         int randomIndex = [CBGUtil getRandomIntBetweenLow:0 andHigh:stockPhotoCount];
     
-        NSString *imagePath = [NSString stringWithFormat:@"%@/%03d-StockPhoto-320x568.png", @"StockPhotos", randomIndex];
+        NSString *imagePath = [NSString stringWithFormat:@"%@/%03d-Buzz.jpg", @"StockPhotos", randomIndex];
     
         photos.photo = [UIImage imageNamed:imagePath];
         photos.photoWithEffects = [photos.photo applyLightEffect];

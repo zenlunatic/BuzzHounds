@@ -128,7 +128,7 @@ static CBGFlickrManager *sharedManager = nil;
         
         NSArray *photos = [inResponseDictionary valueForKeyPath:@"photos.photo"];
                 
-        int numberOfPhotos = [photos count] - 1;
+        int numberOfPhotos = (int)[photos count] - 1;
         
         if(numberOfPhotos >= 0) {
             

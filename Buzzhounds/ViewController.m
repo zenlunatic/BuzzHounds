@@ -37,20 +37,15 @@
 
     self.scrollView.contentSize = CGSizeMake(320, 1950);
     
-    
+    //Initial photos
     CBGPhotos *photos = [[CBGPhotos alloc] init];
-    photos.photo = [UIImage imageNamed: @"BuzzHoundsClown.jpg"];
+    photos.photo = [UIImage imageNamed: @"000-Buzz.jpg"];
     photos.photoWithEffects = [photos.photo applyLightEffect];
     [self crossDissolvePhotos:photos withTitle:@""];
     
-    //Initial stock photos from bundle
-//    [[CBGStockPhotoManager sharedManager] randomStockPhoto:^(CBGPhotos * photos) {
-//        [self crossDissolvePhotos:photos withTitle:@""];
-//    }];
-    
     //Retrieve location and content from Flickr
     [self retrieveLocationAndUpdateBackgroundPhoto];
-//    
+    
 //    //Schedule updates
     self.timer = [NSTimer scheduledTimerWithTimeInterval:kTimerIntervalInSeconds target:self selector:@selector(retrieveLocationAndUpdateBackgroundPhoto)userInfo:nil repeats:YES];
 }
@@ -67,15 +62,10 @@
             [self.activityIndicator stopAnimating];
         } else {
             
-            //Error : Stock photos
-            CBGPhotos *photos = [[CBGPhotos alloc] init];
-            photos.photo = [UIImage imageNamed: @"BuzzHoundsClown.jpg"];
-            photos.photoWithEffects = [photos.photo applyLightEffect];
-            [self crossDissolvePhotos:photos withTitle:@""];
             
-//            [[CBGStockPhotoManager sharedManager] randomStockPhoto:^(CBGPhotos * photos) {
-//                [self crossDissolvePhotos:photos withTitle:@""];
-//            }];
+            [[CBGStockPhotoManager sharedManager] randomStockPhoto:^(CBGPhotos * photos) {
+                [self crossDissolvePhotos:photos withTitle:@""];
+            }];
             
             [self.activityIndicator stopAnimating];
             
