@@ -17,6 +17,9 @@
 		045BE33C18E462C90057D350 /* bhSHIRTmock_crop.png in Resources */ = {isa = PBXBuildFile; fileRef = 045BE33B18E462C90057D350 /* bhSHIRTmock_crop.png */; };
 		045BE34318E4AA690057D350 /* StockPhotos in Resources */ = {isa = PBXBuildFile; fileRef = 045BE34218E4AA690057D350 /* StockPhotos */; };
 		045BE34518E4AE140057D350 /* 000-Buzz.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 045BE34418E4AE140057D350 /* 000-Buzz.jpg */; };
+		045BE34818E4CEE60057D350 /* backIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 045BE34618E4CEE60057D350 /* backIcon.png */; };
+		045BE34918E4CEE60057D350 /* forwardIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 045BE34718E4CEE60057D350 /* forwardIcon.png */; };
+		045BE34C18E4CFA90057D350 /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 045BE34B18E4CFA90057D350 /* WebViewController.m */; };
 		04F1880718DB632A004515D2 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04F1880618DB632A004515D2 /* AudioToolbox.framework */; };
 		04F1880918DB6333004515D2 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04F1880818DB6333004515D2 /* AVFoundation.framework */; };
 		04F1881118DB67FC004515D2 /* MainContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F1881018DB67FC004515D2 /* MainContentViewController.m */; };
@@ -74,6 +77,10 @@
 		045BE33B18E462C90057D350 /* bhSHIRTmock_crop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bhSHIRTmock_crop.png; sourceTree = "<group>"; };
 		045BE34218E4AA690057D350 /* StockPhotos */ = {isa = PBXFileReference; lastKnownFileType = folder; path = StockPhotos; sourceTree = "<group>"; };
 		045BE34418E4AE140057D350 /* 000-Buzz.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "000-Buzz.jpg"; path = "CBG/StockPhotos/000-Buzz.jpg"; sourceTree = "<group>"; };
+		045BE34618E4CEE60057D350 /* backIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = backIcon.png; sourceTree = "<group>"; };
+		045BE34718E4CEE60057D350 /* forwardIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = forwardIcon.png; sourceTree = "<group>"; };
+		045BE34A18E4CFA90057D350 /* WebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
+		045BE34B18E4CFA90057D350 /* WebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
 		04F1880618DB632A004515D2 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		04F1880818DB6333004515D2 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		04F1880F18DB67FC004515D2 /* MainContentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainContentViewController.h; sourceTree = "<group>"; };
@@ -180,6 +187,8 @@
 		04F1880B18DB6390004515D2 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				045BE34618E4CEE60057D350 /* backIcon.png */,
+				045BE34718E4CEE60057D350 /* forwardIcon.png */,
 				04F1883718E0EBFD004515D2 /* Band */,
 				04F1882918E0DD0C004515D2 /* BuzzHoundsFlag.jpg */,
 				045BE32918E45B870057D350 /* youtube.png */,
@@ -223,6 +232,8 @@
 				04F1881318DB6B03004515D2 /* WebsiteViewController.m */,
 				04F1881B18DC7906004515D2 /* PicViewController.h */,
 				04F1881C18DC7906004515D2 /* PicViewController.m */,
+				045BE34A18E4CFA90057D350 /* WebViewController.h */,
+				045BE34B18E4CFA90057D350 /* WebViewController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -434,6 +445,7 @@
 				045BE33218E45EE80057D350 /* FB.png in Resources */,
 				04F1882518E0D2ED004515D2 /* facebook.png in Resources */,
 				045BE33418E45F460057D350 /* Youtube-2.png in Resources */,
+				045BE34818E4CEE60057D350 /* backIcon.png in Resources */,
 				04F1882B18E0DD0C004515D2 /* BuzzHoundsFlag.jpg in Resources */,
 				04F1881A18DBAF8D004515D2 /* band.jpg in Resources */,
 				045BE33618E45FBD0057D350 /* Images.xcassets in Resources */,
@@ -446,6 +458,7 @@
 				045BE32A18E45B870057D350 /* youtube.png in Resources */,
 				045BE32E18E45D5D0057D350 /* SonicbidsIcon.png in Resources */,
 				589231D3177E00D20075205C /* Default-568h@2x.png in Resources */,
+				045BE34918E4CEE60057D350 /* forwardIcon.png in Resources */,
 				04F1881618DB7CD6004515D2 /* buzzhoundslogo.png in Resources */,
 				045BE33C18E462C90057D350 /* bhSHIRTmock_crop.png in Resources */,
 				045BE32618E385A60057D350 /* icon-ios7-email-64.png in Resources */,
@@ -482,6 +495,7 @@
 				58EBAB15177E0B4B00D16B68 /* OFUtilities.m in Sources */,
 				58EBAB16177E0B4B00D16B68 /* OFXMLMapper.m in Sources */,
 				5856843A177E52F1006FEB91 /* UIImage+Alpha.m in Sources */,
+				045BE34C18E4CFA90057D350 /* WebViewController.m in Sources */,
 				5856843B177E52F1006FEB91 /* UIImage+Resize.m in Sources */,
 				04F1882318E0C707004515D2 /* FadeAnimator.m in Sources */,
 				5856843C177E52F1006FEB91 /* UIImage+RoundedCorner.m in Sources */,

@@ -40,11 +40,27 @@
 
     soundFilePath = [[NSBundle mainBundle] pathForResource:@"deathrace-hardrock" ofType:@"mp3"];
     
-    NSString *fullURL = @"http://www.reverbnation.com/widget_code/html_widget/artist_2905165";
-    //NSString *fullURL = @"http://www.reverbnation.com/widget_code/html_widget/artist_2905165?widget_id=52&posted_by=artist_2905165&pwc[design]=default&pwc[background_color]=%23333333&pwc[layout]=detailed&pwc[size]=fit";
-    NSURL *url = [NSURL URLWithString:fullURL];
-    NSURLRequest *requestObj = [NSURLRequest requestWithURL:url];
-    [_webGigsView loadRequest:requestObj];
+    NSString *fullURL = @"http://www.reverbnation.com/widget_code/html_widget/artist_2905165?widget_id=52&posted_by=artist_2905165&pwc[design]=default&pwc[background_color]=%23333333&pwc[layout]=compact&pwc[show_map]=0&pwc[size]=fit";
+    
+//    NSString *embedHTML=[NSString stringWithFormat:@"\
+//                          <html><head>\
+//                          <style type=\"text/css\">\
+//                          body {\
+//                          background-color: transparent;\
+//                          color: transparent;\
+//                          }\
+//                          </style>\
+//                          </head><body style=\"margin:0\">\
+//                          <iframe width=\"280\" height=\"550px\" src=\"%@\"></iframe>\
+//                          </body></html>", fullURL];
+    NSString *embedHTML = @"<div class=\"widget_iframe\" style=\"display:inline-block;width:100%;height:100%;margin:0;padding:0;border:0;\"><iframe class=\"widget_iframe\" src=\"http://www.reverbnation.com/widget_code/html_widget/artist_2905165?widget_id=52&pwc[design]=default&pwc[background_color]=%23333333&pwc[layout]=compact&pwc[show_map]=0&pwc[size]=custom\" width=\"100%\" height=\"100%\" frameborder=\"0\" scrolling=\"no\"></iframe></div>";
+    [_UpcomingShowsWebView loadHTMLString:embedHTML baseURL:nil];
+    _UpcomingShowsWebView.scrollView.showsHorizontalScrollIndicator = NO;
+    _UpcomingShowsWebView.scrollView.showsVerticalScrollIndicator = NO;
+//
+//    NSURL *url = [NSURL URLWithString:fullURL];
+//    NSURLRequest *requestObj = [NSURLRequest requestWithURL:url];
+//    [_UpcomingShowsWebView loadRequest:requestObj];
     
 }
 

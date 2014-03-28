@@ -35,7 +35,7 @@
     
     [super viewDidLoad];
 
-    self.scrollView.contentSize = CGSizeMake(320, 1950);
+    self.scrollView.contentSize = CGSizeMake(320, 2500);
     
     //Initial photos
     CBGPhotos *photos = [[CBGPhotos alloc] init];

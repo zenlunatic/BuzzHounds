@@ -15,7 +15,7 @@
 
 - (IBAction)didTouchMainLogo:(id)sender;
 
-@property (strong, nonatomic) IBOutlet UIWebView *webGigsView;
+@property (strong, nonatomic) IBOutlet UIWebView *UpcomingShowsWebView;
 @property (strong, nonatomic) IBOutlet UIScrollView *YouTubeScrollView;
 @property (nonatomic, strong) FadeAnimator *fadeAnimator;
 
