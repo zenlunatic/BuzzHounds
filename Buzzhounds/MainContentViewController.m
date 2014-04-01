@@ -31,6 +31,7 @@
 
 - (void)viewWillAppear:(BOOL)animated
 {
+    
     NSString *embedHTML = @"<div class=\"widget_iframe\" style=\"display:inline-block;width:100%;height:100%;margin:0;padding:0;border:0;\"><iframe class=\"widget_iframe\" src=\"http://www.reverbnation.com/widget_code/html_widget/artist_2905165?widget_id=52&pwc[design]=default&pwc[background_color]=%23333333&pwc[layout]=compact&pwc[show_map]=0&pwc[size]=custom\" width=\"100%\" height=\"100%\" frameborder=\"0\" scrolling=\"no\"></iframe></div>";
     
     [_UpcomingShowsWebView loadHTMLString:embedHTML baseURL:nil];
@@ -58,8 +59,6 @@
     _YouTubeScrollView.backgroundColor = [UIColor clearColor];
 
     soundFilePath = [[NSBundle mainBundle] pathForResource:@"deathrace-hardrock" ofType:@"mp3"];
-    
-
 }
 
 - (void)didReceiveMemoryWarning
@@ -104,9 +103,6 @@
     }
 
 }
-
-
-
 
 - (void)motionEnded:(UIEventSubtype)motion withEvent:(UIEvent *)event
 {
@@ -154,7 +150,6 @@
     
 }
 
-
 - (IBAction)didClickEmail:(id)sender {
     
     NSString* welcome = @"<p>Welcome to The BuzzHounds.</p>";
@@ -181,8 +176,6 @@
     
 }
 
-
-
 - (void)mailComposeController:(MFMailComposeViewController*)controller didFinishWithResult:(MFMailComposeResult)result error:(NSError*)error
 {
     if (result == MFMailComposeResultFailed) {
@@ -190,7 +183,6 @@
     }
 	[self dismissViewControllerAnimated:YES completion:nil];
 }
-
 
 -(void) showMessage: (NSString*)message
 {
@@ -202,16 +194,16 @@
 
 
 // Report who is in charge of the animation
-- (id<UIViewControllerAnimatedTransitioning>)navigationController:(UINavigationController *)navigationController
-                                  animationControllerForOperation:(UINavigationControllerOperation)operation
-                                               fromViewController:(UITabBarController *)fromVC
-                                                 toViewController:(UIViewController *)toVC
-{
-    if (!self.fadeAnimator) {
-        self.fadeAnimator = [FadeAnimator new];
-    }
-    return self.fadeAnimator;
-}
+//- (id<UIViewControllerAnimatedTransitioning>)navigationController:(UINavigationController *)navigationController
+//                                  animationControllerForOperation:(UINavigationControllerOperation)operation
+//                                               fromViewController:(UITabBarController *)fromVC
+//                                                 toViewController:(UIViewController *)toVC
+//{
+//    if (!self.fadeAnimator) {
+//        self.fadeAnimator = [FadeAnimator new];
+//    }
+//    return self.fadeAnimator;
+//}
 
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender

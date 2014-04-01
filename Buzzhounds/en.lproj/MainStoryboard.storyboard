@@ -142,12 +142,12 @@
                                             <segue destination="8tW-KA-uCP" kind="push" id="Wr7-fU-zoi"/>
                                         </connections>
                                     </button>
-                                    <scrollView opaque="NO" clipsSubviews="YES" contentMode="scaleAspectFit" bounces="NO" alwaysBounceHorizontal="YES" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" id="1sz-xA-YhE">
-                                        <rect key="frame" x="23" y="1034" width="280" height="157"/>
+                                    <scrollView opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" alwaysBounceHorizontal="YES" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" id="1sz-xA-YhE">
+                                        <rect key="frame" x="8" y="1034" width="312" height="157"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES"/>
                                         <subviews>
-                                            <containerView opaque="NO" contentMode="scaleToFill" id="eyR-G8-pvu">
-                                                <rect key="frame" x="0.0" y="0.0" width="2520" height="158"/>
+                                            <containerView opaque="NO" contentMode="scaleAspectFit" id="eyR-G8-pvu">
+                                                <rect key="frame" x="-8" y="0.0" width="2543" height="158"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                 <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -359,7 +359,6 @@ The Buzzhounds have taken Chicago's live scene by storm, creating a loyal follow
                     </toolbarItems>
                     <navigationItem key="navigationItem" id="8Qt-YQ-pBx"/>
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
-                    <nil key="simulatedTopBarMetrics"/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
@@ -382,51 +381,54 @@ The Buzzhounds have taken Chicago's live scene by storm, creating a loyal follow
                         <rect key="frame" x="0.0" y="0.0" width="2520" height="158"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <webView opaque="NO" contentMode="scaleToFill" id="xyd-B6-0QR">
-                                <rect key="frame" x="0.0" y="0.0" width="280" height="158"/>
+                            <webView autoresizesSubviews="NO" opaque="NO" contentMode="scaleToFill" id="xyd-B6-0QR">
+                                <rect key="frame" x="25" y="0.0" width="280" height="158"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <dataDetectorType key="dataDetectorTypes"/>
                             </webView>
-                            <webView contentMode="scaleToFill" id="Iu1-yU-3WR">
-                                <rect key="frame" x="280" y="0.0" width="280" height="158"/>
+                            <webView opaque="NO" contentMode="scaleToFill" id="Iu1-yU-3WR">
+                                <rect key="frame" x="335" y="0.0" width="280" height="158"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             </webView>
                             <webView opaque="NO" contentMode="scaleToFill" id="080-Wf-eRf">
-                                <rect key="frame" x="560" y="0.0" width="280" height="158"/>
+                                <rect key="frame" x="650" y="0.0" width="280" height="158"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             </webView>
-                            <webView contentMode="scaleToFill" id="IQ8-jU-0wq">
-                                <rect key="frame" x="840" y="0.0" width="280" height="158"/>
+                            <webView opaque="NO" contentMode="scaleToFill" id="IQ8-jU-0wq">
+                                <rect key="frame" x="960" y="0.0" width="280" height="158"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             </webView>
-                            <webView contentMode="scaleToFill" id="leS-25-i3y">
-                                <rect key="frame" x="1120" y="0.0" width="280" height="158"/>
+                            <webView opaque="NO" contentMode="scaleToFill" id="leS-25-i3y">
+                                <rect key="frame" x="1270" y="0.0" width="280" height="158"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             </webView>
-                            <webView contentMode="scaleToFill" id="H1a-aP-z9V">
-                                <rect key="frame" x="1400" y="0.0" width="280" height="158"/>
+                            <webView opaque="NO" contentMode="scaleToFill" id="H1a-aP-z9V">
+                                <rect key="frame" x="1580" y="0.0" width="280" height="158"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             </webView>
-                            <webView contentMode="scaleToFill" id="oXR-nR-2Ln">
-                                <rect key="frame" x="1680" y="0.0" width="280" height="158"/>
+                            <webView opaque="NO" contentMode="scaleToFill" id="oXR-nR-2Ln">
+                                <rect key="frame" x="1895" y="0.0" width="280" height="158"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             </webView>
-                            <webView contentMode="scaleToFill" id="g4u-58-X6V">
-                                <rect key="frame" x="1960" y="0.0" width="280" height="158"/>
+                            <webView opaque="NO" contentMode="scaleToFill" id="hFk-og-1Mi">
+                                <rect key="frame" x="2210" y="0.0" width="280" height="158"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                            </webView>
-                            <webView contentMode="scaleToFill" id="hFk-og-1Mi">
-                                <rect key="frame" x="2240" y="0.0" width="280" height="158"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             </webView>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -442,13 +444,12 @@ The Buzzhounds have taken Chicago's live scene by storm, creating a loyal follow
                         <outlet property="webView5" destination="leS-25-i3y" id="WPc-OU-s26"/>
                         <outlet property="webView6" destination="H1a-aP-z9V" id="8Q5-gf-Viy"/>
                         <outlet property="webView7" destination="oXR-nR-2Ln" id="ezV-Bg-ThE"/>
-                        <outlet property="webView8" destination="g4u-58-X6V" id="b1E-VQ-BYi"/>
                         <outlet property="webView9" destination="hFk-og-1Mi" id="4BP-Ik-bYN"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nga-cA-Xzx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="763" y="661"/>
+            <point key="canvasLocation" x="801" y="649"/>
         </scene>
     </scenes>
     <resources>
@@ -470,6 +471,6 @@ The Buzzhounds have taken Chicago's live scene by storm, creating a loyal follow
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="K6Z-bU-AJm"/>
+        <segue reference="4us-qX-F4v"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -17,7 +17,6 @@
 @property (strong, nonatomic) IBOutlet UIWebView *webView5;
 @property (strong, nonatomic) IBOutlet UIWebView *webView6;
 @property (strong, nonatomic) IBOutlet UIWebView *webView7;
-@property (strong, nonatomic) IBOutlet UIWebView *webView8;
 @property (strong, nonatomic) IBOutlet UIWebView *webView9;
 
 @end

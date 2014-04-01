@@ -33,8 +33,6 @@
     [super viewDidLoad];
 
     
-    [self.navigationController setNavigationBarHidden:YES];
-    
     activity = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleWhite];
     activity.frame=CGRectMake(0, 0, 20, 20);
     activity.center=self.view.center;
@@ -64,6 +62,7 @@
 {
     //we have a transulcent bar for other pages
     //[self.navigationController.toolbar setBarStyle:UIBarStyleBlack];
+    [self.navigationController setNavigationBarHidden:YES];
     [self.navigationController setToolbarHidden:NO];
     
     NSURL *url;
