@@ -27,7 +27,7 @@
 
 - (void)viewWillDisappear:(BOOL)animated
 {
-    [[self navigationController] setNavigationBarHidden:NO animated:YES];
+   // [[self navigationController] setNavigationBarHidden:NO animated:YES];
 }
 
 
@@ -97,14 +97,17 @@
     float settingDissolve = 500.0;
     
     if(scrollView.contentOffset.y >= 0 && scrollView.contentOffset.y <= settingDissolve) {
-        float percent = (scrollView.contentOffset.y / settingDissolve);
         
+        float percent = (scrollView.contentOffset.y / settingDissolve);
         self.backgroundPhotoWithImageEffects.alpha = percent;
+        self.backgroundPhoto.alpha = 100- percent;
         
     } else if (scrollView.contentOffset.y > settingDissolve){
-        self.backgroundPhotoWithImageEffects.alpha = 1;
+        //self.backgroundPhotoWithImageEffects.alpha = 0;
+        self.backgroundPhoto.alpha = 0;
     } else if (scrollView.contentOffset.y < 0) {
         self.backgroundPhotoWithImageEffects.alpha = 0;
+        self.backgroundPhoto.alpha = 1;
     }
 }
 

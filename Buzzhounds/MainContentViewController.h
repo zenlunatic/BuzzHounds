@@ -10,6 +10,7 @@
 #import <AVFoundation/AVFoundation.h>
 #import "FadeAnimator.h"
 #import <MessageUI/MessageUI.h>
+#import <QuartzCore/QuartzCore.h>
 
 @interface MainContentViewController : UIViewController<AVAudioPlayerDelegate, UIScrollViewDelegate, UINavigationControllerDelegate, MFMailComposeViewControllerDelegate>
 
@@ -21,9 +22,8 @@
 
 - (IBAction)didClickDownload:(id)sender;
 - (IBAction)didClickFacebook:(id)sender;
-- (IBAction)didClickReverbNation:(id)sender;
 - (IBAction)didClickEmail:(id)sender;
-- (IBAction)didClickPresskit:(id)sender;
-- (IBAction)didClickYouTube:(id)sender;
+
+@property (strong, nonatomic) IBOutlet UIImageView *albumImage;
 
 @end

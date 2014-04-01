@@ -20,10 +20,12 @@
 		045BE34818E4CEE60057D350 /* backIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 045BE34618E4CEE60057D350 /* backIcon.png */; };
 		045BE34918E4CEE60057D350 /* forwardIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 045BE34718E4CEE60057D350 /* forwardIcon.png */; };
 		045BE34C18E4CFA90057D350 /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 045BE34B18E4CFA90057D350 /* WebViewController.m */; };
+		045BE34E18EA296D0057D350 /* reverbnation-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 045BE34D18EA296D0057D350 /* reverbnation-icon.png */; };
+		045BE35018EA298A0057D350 /* black_facebook.png in Resources */ = {isa = PBXBuildFile; fileRef = 045BE34F18EA298A0057D350 /* black_facebook.png */; };
+		045BE35218EA2E540057D350 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 045BE35118EA2E540057D350 /* QuartzCore.framework */; };
 		04F1880718DB632A004515D2 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04F1880618DB632A004515D2 /* AudioToolbox.framework */; };
 		04F1880918DB6333004515D2 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04F1880818DB6333004515D2 /* AVFoundation.framework */; };
 		04F1881118DB67FC004515D2 /* MainContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F1881018DB67FC004515D2 /* MainContentViewController.m */; };
-		04F1881418DB6B03004515D2 /* WebsiteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F1881318DB6B03004515D2 /* WebsiteViewController.m */; };
 		04F1881618DB7CD6004515D2 /* buzzhoundslogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 04F1881518DB7CD6004515D2 /* buzzhoundslogo.png */; };
 		04F1881818DBA27C004515D2 /* standup.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 04F1881718DBA27C004515D2 /* standup.mp3 */; };
 		04F1881A18DBAF8D004515D2 /* band.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 04F1881918DBAF8D004515D2 /* band.jpg */; };
@@ -81,12 +83,13 @@
 		045BE34718E4CEE60057D350 /* forwardIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = forwardIcon.png; sourceTree = "<group>"; };
 		045BE34A18E4CFA90057D350 /* WebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
 		045BE34B18E4CFA90057D350 /* WebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
+		045BE34D18EA296D0057D350 /* reverbnation-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "reverbnation-icon.png"; sourceTree = "<group>"; };
+		045BE34F18EA298A0057D350 /* black_facebook.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = black_facebook.png; sourceTree = "<group>"; };
+		045BE35118EA2E540057D350 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		04F1880618DB632A004515D2 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		04F1880818DB6333004515D2 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		04F1880F18DB67FC004515D2 /* MainContentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainContentViewController.h; sourceTree = "<group>"; };
 		04F1881018DB67FC004515D2 /* MainContentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainContentViewController.m; sourceTree = "<group>"; };
-		04F1881218DB6B03004515D2 /* WebsiteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebsiteViewController.h; sourceTree = "<group>"; };
-		04F1881318DB6B03004515D2 /* WebsiteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebsiteViewController.m; sourceTree = "<group>"; };
 		04F1881518DB7CD6004515D2 /* buzzhoundslogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = buzzhoundslogo.png; sourceTree = "<group>"; };
 		04F1881718DBA27C004515D2 /* standup.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = standup.mp3; sourceTree = "<group>"; };
 		04F1881918DBAF8D004515D2 /* band.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = band.jpg; sourceTree = "<group>"; };
@@ -159,6 +162,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				045BE35218EA2E540057D350 /* QuartzCore.framework in Frameworks */,
 				045BE32818E3872A0057D350 /* MessageUI.framework in Frameworks */,
 				04F1880918DB6333004515D2 /* AVFoundation.framework in Frameworks */,
 				04F1880718DB632A004515D2 /* AudioToolbox.framework in Frameworks */,
@@ -191,7 +195,9 @@
 				045BE34718E4CEE60057D350 /* forwardIcon.png */,
 				04F1883718E0EBFD004515D2 /* Band */,
 				04F1882918E0DD0C004515D2 /* BuzzHoundsFlag.jpg */,
+				045BE34D18EA296D0057D350 /* reverbnation-icon.png */,
 				045BE32918E45B870057D350 /* youtube.png */,
+				045BE34F18EA298A0057D350 /* black_facebook.png */,
 				045BE34418E4AE140057D350 /* 000-Buzz.jpg */,
 				045BE33318E45F460057D350 /* Youtube-2.png */,
 				045BE33B18E462C90057D350 /* bhSHIRTmock_crop.png */,
@@ -228,8 +234,6 @@
 				589231D8177E00D20075205C /* ViewController.m */,
 				04F1880F18DB67FC004515D2 /* MainContentViewController.h */,
 				04F1881018DB67FC004515D2 /* MainContentViewController.m */,
-				04F1881218DB6B03004515D2 /* WebsiteViewController.h */,
-				04F1881318DB6B03004515D2 /* WebsiteViewController.m */,
 				04F1881B18DC7906004515D2 /* PicViewController.h */,
 				04F1881C18DC7906004515D2 /* PicViewController.m */,
 				045BE34A18E4CFA90057D350 /* WebViewController.h */,
@@ -274,6 +278,7 @@
 		589231BB177E00D20075205C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				045BE35118EA2E540057D350 /* QuartzCore.framework */,
 				045BE32718E3872A0057D350 /* MessageUI.framework */,
 				04F1880818DB6333004515D2 /* AVFoundation.framework */,
 				04F1880618DB632A004515D2 /* AudioToolbox.framework */,
@@ -453,7 +458,9 @@
 				589231C7177E00D20075205C /* InfoPlist.strings in Resources */,
 				045BE34318E4AA690057D350 /* StockPhotos in Resources */,
 				589231CF177E00D20075205C /* Default.png in Resources */,
+				045BE34E18EA296D0057D350 /* reverbnation-icon.png in Resources */,
 				589231D1177E00D20075205C /* Default@2x.png in Resources */,
+				045BE35018EA298A0057D350 /* black_facebook.png in Resources */,
 				045BE34518E4AE140057D350 /* 000-Buzz.jpg in Resources */,
 				045BE32A18E45B870057D350 /* youtube.png in Resources */,
 				045BE32E18E45D5D0057D350 /* SonicbidsIcon.png in Resources */,
@@ -485,7 +492,6 @@
 				58EBAB0C177E0B4B00D16B68 /* CBGFlickrManager.m in Sources */,
 				58EBAB0D177E0B4B00D16B68 /* CBGLocationManager.m in Sources */,
 				58EBAB0E177E0B4B00D16B68 /* CBGPhotos.m in Sources */,
-				04F1881418DB6B03004515D2 /* WebsiteViewController.m in Sources */,
 				58EBAB0F177E0B4B00D16B68 /* CBGStockPhotoManager.m in Sources */,
 				58EBAB10177E0B4B00D16B68 /* CBGUtil.m in Sources */,
 				58EBAB11177E0B4B00D16B68 /* LFHTTPRequest.m in Sources */,

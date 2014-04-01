@@ -16,8 +16,8 @@
 
 @implementation WebViewController
 
-@synthesize webView, forwardButton, backButton;
-@synthesize loadFor, openLinksInSafari, showToolBar, showNavigationBar;
+@synthesize webView, forwardButton, backButton, goBackButton, activityButton;
+@synthesize loadurl, openLinksInSafari;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -31,10 +31,46 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+
+    
+    [self.navigationController setNavigationBarHidden:YES];
     
     activity = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleWhite];
     activity.frame=CGRectMake(0, 0, 20, 20);
     activity.center=self.view.center;
+    
+    [activityButton setCustomView:activity];
+    
+    activity = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleWhite];
+    activity.frame=CGRectMake(0, 0, 20, 20);
+    activity.center=self.view.center;
+    
+    [activityButton setCustomView:activity];
+    
+    UIButton* btn = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 64, 64)];
+    [btn addTarget:self action:@selector(goBack:) forControlEvents:UIControlEventTouchUpInside];
+    [btn setImage:[UIImage imageNamed:@"bhSHIRTmock_crop.png"] forState:UIControlStateNormal];
+    [goBackButton setCustomView:btn];
+    
+    [self updateBars];
+}
+
+- (void)viewWillDisappear:(BOOL)animated
+{
+    [self.navigationController setToolbarHidden:YES];
+}
+
+-(void)viewWillAppear:(BOOL)animated
+{
+    //we have a transulcent bar for other pages
+    //[self.navigationController.toolbar setBarStyle:UIBarStyleBlack];
+    [self.navigationController setToolbarHidden:NO];
+    
+    NSURL *url;
+    url=[NSURL URLWithString:loadurl];
+
+    NSURLRequest *request = [NSURLRequest requestWithURL:url];
+    [self.webView loadRequest:request];
 }
 
 - (void)didReceiveMemoryWarning
@@ -46,14 +82,6 @@
 #pragma mark UIWebViewDelegate
 - (BOOL)webView:(UIWebView*)webView shouldStartLoadWithRequest:(NSURLRequest*)request navigationType:(UIWebViewNavigationType)navigationType
 {
-    //cars.iaai.com has a embedded youtube video, which requires following code to play video
-    NSRange result=[request.URL.absoluteString rangeOfString:@"http://www.youtube.com"];
-    if(result.length>0){
-        [[UIApplication sharedApplication] openURL:request.URL];
-        return NO;
-    }
-    
-    
     if(navigationType == UIWebViewNavigationTypeLinkClicked && openLinksInSafari){
         [[UIApplication sharedApplication] openURL:request.URL];
         return NO;
@@ -85,23 +113,11 @@
 #pragma Private methods
 
 -(void)updateBars {
-    [self.navigationController setToolbarHidden:showToolBar];
-    [self.navigationController setNavigationBarHidden:showNavigationBar];
-    
+
 	backButton.enabled = [[self webView] canGoBack];
 	forwardButton.enabled = [[self webView] canGoForward];
 }
 
-//-(IBAction)backAction:(id)sender
-//{
-//	[self.webView goBack];
-//}
-
-
-//-(IBAction)forwardAction:(id)sender
-//{
-//	[self.webView goForward];
-//}
 
 -(IBAction)goBack:(id)sender
 {

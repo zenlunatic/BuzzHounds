@@ -7,6 +7,7 @@
 //
 
 #import "MainContentViewController.h"
+#import "WebViewController.h"
 
 
 @interface MainContentViewController ()
@@ -30,6 +31,24 @@
 
 - (void)viewWillAppear:(BOOL)animated
 {
+    NSString *embedHTML = @"<div class=\"widget_iframe\" style=\"display:inline-block;width:100%;height:100%;margin:0;padding:0;border:0;\"><iframe class=\"widget_iframe\" src=\"http://www.reverbnation.com/widget_code/html_widget/artist_2905165?widget_id=52&pwc[design]=default&pwc[background_color]=%23333333&pwc[layout]=compact&pwc[show_map]=0&pwc[size]=custom\" width=\"100%\" height=\"100%\" frameborder=\"0\" scrolling=\"no\"></iframe></div>";
+    
+    [_UpcomingShowsWebView loadHTMLString:embedHTML baseURL:nil];
+    _UpcomingShowsWebView.scrollView.showsHorizontalScrollIndicator = NO;
+    _UpcomingShowsWebView.scrollView.showsVerticalScrollIndicator = NO;
+    
+    _UpcomingShowsWebView.layer.cornerRadius = 10;
+    for (UIView* subview in _UpcomingShowsWebView.subviews)
+        subview.layer.cornerRadius = 10;
+    
+    _UpcomingShowsWebView.layer.shadowColor = [UIColor blackColor].CGColor;
+    _UpcomingShowsWebView.layer.shadowOpacity = 0.7f;
+    _UpcomingShowsWebView.layer.shadowOffset = CGSizeMake(10.0f, 10.0f);
+    _UpcomingShowsWebView.layer.shadowRadius = 5.0f;
+    _UpcomingShowsWebView.layer.masksToBounds = NO;
+    //UIBezierPath *path = [UIBezierPath bezierPathWithRect:_label.bounds];
+    //_UpcomingShowsWebView.layer.shadowPath = path.CGPath;
+    
 }
 
 - (void)viewDidLoad
@@ -40,28 +59,7 @@
 
     soundFilePath = [[NSBundle mainBundle] pathForResource:@"deathrace-hardrock" ofType:@"mp3"];
     
-    NSString *fullURL = @"http://www.reverbnation.com/widget_code/html_widget/artist_2905165?widget_id=52&posted_by=artist_2905165&pwc[design]=default&pwc[background_color]=%23333333&pwc[layout]=compact&pwc[show_map]=0&pwc[size]=fit";
-    
-//    NSString *embedHTML=[NSString stringWithFormat:@"\
-//                          <html><head>\
-//                          <style type=\"text/css\">\
-//                          body {\
-//                          background-color: transparent;\
-//                          color: transparent;\
-//                          }\
-//                          </style>\
-//                          </head><body style=\"margin:0\">\
-//                          <iframe width=\"280\" height=\"550px\" src=\"%@\"></iframe>\
-//                          </body></html>", fullURL];
-    NSString *embedHTML = @"<div class=\"widget_iframe\" style=\"display:inline-block;width:100%;height:100%;margin:0;padding:0;border:0;\"><iframe class=\"widget_iframe\" src=\"http://www.reverbnation.com/widget_code/html_widget/artist_2905165?widget_id=52&pwc[design]=default&pwc[background_color]=%23333333&pwc[layout]=compact&pwc[show_map]=0&pwc[size]=custom\" width=\"100%\" height=\"100%\" frameborder=\"0\" scrolling=\"no\"></iframe></div>";
-    [_UpcomingShowsWebView loadHTMLString:embedHTML baseURL:nil];
-    _UpcomingShowsWebView.scrollView.showsHorizontalScrollIndicator = NO;
-    _UpcomingShowsWebView.scrollView.showsVerticalScrollIndicator = NO;
-//
-//    NSURL *url = [NSURL URLWithString:fullURL];
-//    NSURLRequest *requestObj = [NSURLRequest requestWithURL:url];
-//    [_UpcomingShowsWebView loadRequest:requestObj];
-    
+
 }
 
 - (void)didReceiveMemoryWarning
@@ -146,20 +144,16 @@
 }
 
 - (IBAction)didClickFacebook:(id)sender {
-
     
-    NSURL *facebookURL = [NSURL URLWithString:@"fb://profile/350835098300811"];
-    if ([[UIApplication sharedApplication] canOpenURL:facebookURL]) {
-        [[UIApplication sharedApplication] openURL:facebookURL];
-    } else {
-        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"http://facebook.com/buzzhounds"]];
-    }
+            NSURL *facebookURL = [NSURL URLWithString:@"fb://profile/350835098300811"];
+            if ([[UIApplication sharedApplication] canOpenURL:facebookURL]) {
+                [[UIApplication sharedApplication] openURL:facebookURL];
+            } else {
+                [self performSegueWithIdentifier: @"FacebookSegue" sender:self];
+            }
+    
 }
 
-- (IBAction)didClickReverbNation:(id)sender {
-    NSString *downloadURL = @"http://www.reverbnation.com/thebuzzhounds";
-    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:downloadURL]];
-}
 
 - (IBAction)didClickEmail:(id)sender {
     
@@ -187,15 +181,7 @@
     
 }
 
-- (IBAction)didClickPresskit:(id)sender {
-    NSString *downloadURL = @"http://www.sonicbids.com/band/thebuzzhounds";
-    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:downloadURL]];
-}
 
-- (IBAction)didClickYouTube:(id)sender {
-    NSString *downloadURL = @"http://www.youtube.com/user/kudathecat";
-    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:downloadURL]];
-}
 
 - (void)mailComposeController:(MFMailComposeViewController*)controller didFinishWithResult:(MFMailComposeResult)result error:(NSError*)error
 {
@@ -227,6 +213,34 @@
     return self.fadeAnimator;
 }
 
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ([[segue identifier] isEqualToString:@"BuzzhoundsSegue"]) {
+         WebViewController *vc = [segue destinationViewController];
+         vc.loadurl = @"http://www.buzzhounds.net";
+    }
+    else if ([[segue identifier] isEqualToString:@"FacebookSegue"])
+    {
+        WebViewController *vc = [segue destinationViewController];
+        vc.loadurl = @"http://facebook.com/buzzhounds";
+    }
+    else if ([[segue identifier] isEqualToString:@"YoutubeSegue"])
+    {
+        WebViewController *vc = [segue destinationViewController];
+        vc.loadurl = @"http://www.youtube.com/user/kudathecat";
+    }
+    else if ([[segue identifier] isEqualToString:@"PresskitSegue"])
+    {
+        WebViewController *vc = [segue destinationViewController];
+        vc.loadurl = @"http://www.sonicbids.com/band/thebuzzhounds";
+    }
+    else if ([[segue identifier] isEqualToString:@"ReverbNationSegue"])
+    {
+        WebViewController *vc = [segue destinationViewController];
+        vc.loadurl = @"http://www.reverbnation.com/thebuzzhounds";
+    }
+}
 
 
 @end

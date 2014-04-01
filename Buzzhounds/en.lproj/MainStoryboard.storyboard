@@ -122,13 +122,13 @@
                                         </connections>
                                     </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="ow7-3N-7vX">
-                                        <rect key="frame" x="106" y="1472" width="123" height="67"/>
+                                        <rect key="frame" x="107" y="1444" width="123" height="67"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" title="News" image="BuzzHoundsFlag.jpg">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
-                                            <segue destination="H9F-bu-WRf" kind="push" id="Crk-MU-dfm"/>
+                                            <segue destination="vnx-ay-JPI" kind="push" identifier="BuzzhoundsSegue" id="4us-qX-F4v"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="WWW-cv-7cL">
@@ -167,18 +167,18 @@
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Music" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Sfg-W4-lRl">
-                                        <rect key="frame" x="23" y="648" width="280" height="21"/>
+                                        <rect key="frame" x="23" y="644" width="174" height="21"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                        <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="20"/>
+                                        <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="20"/>
                                         <color key="textColor" red="0.47843140360000003" green="0.0" blue="0.14901961389999999" alpha="1" colorSpace="deviceRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Upcoming Shows" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="7Sh-Pg-dsd">
-                                        <rect key="frame" x="24" y="216" width="276" height="21"/>
+                                        <rect key="frame" x="24" y="209" width="276" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                        <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="20"/>
+                                        <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="20"/>
                                         <color key="textColor" red="0.47843140360000003" green="0.0" blue="0.14901961389999999" alpha="1" colorSpace="deviceRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -186,13 +186,14 @@
                                         <rect key="frame" x="23" y="1011" width="280" height="21"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                        <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="20"/>
+                                        <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="20"/>
                                         <color key="textColor" red="0.47843140360000003" green="0.0" blue="0.14901961389999999" alpha="1" colorSpace="deviceRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="JrV-4Q-rmN">
-                                        <rect key="frame" x="23" y="945" width="280" height="30"/>
+                                        <rect key="frame" x="205" y="640" width="115" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="19"/>
                                         <state key="normal" title="Download">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
@@ -203,28 +204,29 @@
                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Band Bio" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="rPD-NZ-nbN">
                                         <rect key="frame" x="23" y="1221" width="280" height="21"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="20"/>
+                                        <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="20"/>
                                         <color key="textColor" red="0.47843140360000003" green="0.0" blue="0.14901961389999999" alpha="1" colorSpace="deviceRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="ISY-kY-s5F">
-                                        <rect key="frame" x="47" y="1547" width="65" height="65"/>
+                                        <rect key="frame" x="24" y="1550" width="55" height="55"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" image="FB.png">
+                                        <state key="normal" image="black_facebook.png">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
                                             <action selector="didClickFacebook:" destination="YiS-HA-V0D" eventType="touchUpInside" id="trf-mf-lHV"/>
+                                            <segue destination="vnx-ay-JPI" kind="push" identifier="FacebookSegue" id="bYG-gY-a8f"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Rng-tL-Ymg">
-                                        <rect key="frame" x="90" y="1439" width="150" height="30"/>
+                                        <rect key="frame" x="101" y="1548" width="60" height="60"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" image="reverbnation.png">
+                                        <state key="normal" image="reverbnation-icon.png">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
-                                            <action selector="didClickReverbNation:" destination="YiS-HA-V0D" eventType="touchUpInside" id="zfA-Jl-G9a"/>
+                                            <segue destination="vnx-ay-JPI" kind="push" identifier="ReverbNationSegue" id="Ua0-mV-5eE"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="YHl-mi-eUx">
@@ -238,23 +240,23 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="1H6-8H-ota">
-                                        <rect key="frame" x="141" y="1547" width="67" height="67"/>
+                                        <rect key="frame" x="169" y="1538" width="80" height="80"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" image="Youtube-2.png">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
-                                            <action selector="didClickYouTube:" destination="YiS-HA-V0D" eventType="touchUpInside" id="AAZ-1a-Zbg"/>
+                                            <segue destination="vnx-ay-JPI" kind="push" identifier="YoutubeSegue" id="AAi-sj-GoH"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="WCF-6J-g8O">
-                                        <rect key="frame" x="235" y="1547" width="65" height="65"/>
+                                        <rect key="frame" x="243" y="1543" width="70" height="70"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" title="Button" image="SonicbidsIcon.png">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
-                                            <action selector="didClickPresskit:" destination="YiS-HA-V0D" eventType="touchUpInside" id="yEt-fR-d3n"/>
+                                            <segue destination="vnx-ay-JPI" kind="push" identifier="PresskitSegue" id="K6Z-bU-AJm"/>
                                         </connections>
                                     </button>
                                     <webView opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" id="eg1-Oq-YJh">
@@ -274,6 +276,7 @@
                     <connections>
                         <outlet property="UpcomingShowsWebView" destination="eg1-Oq-YJh" id="ba2-yJ-U9g"/>
                         <outlet property="YouTubeScrollView" destination="1sz-xA-YhE" id="TjV-fN-NQM"/>
+                        <outlet property="albumImage" destination="ece-hx-aV0" id="YQ4-2m-2hb"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="t1q-JW-uWv" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -318,52 +321,29 @@ The Buzzhounds have taken Chicago's live scene by storm, creating a loyal follow
             </objects>
             <point key="canvasLocation" x="773" y="938"/>
         </scene>
-        <!--Website View Controller-->
-        <scene sceneID="KUb-Yu-UPZ">
-            <objects>
-                <viewController id="H9F-bu-WRf" customClass="WebsiteViewController" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleAspectFit" id="swt-k6-32U">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <subviews>
-                            <webView contentMode="scaleAspectFit" scalesPageToFit="YES" id="iwu-1q-rQP">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                            </webView>
-                        </subviews>
-                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="mwV-iJ-T5r"/>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
-                    <connections>
-                        <outlet property="webView" destination="iwu-1q-rQP" id="NqL-HS-zis"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dv0-WP-neq" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="789" y="1642"/>
-        </scene>
         <!--Web View Controller-->
         <scene sceneID="U2N-6e-K49">
             <objects>
                 <viewController id="vnx-ay-JPI" customClass="WebViewController" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="ttX-FV-as2">
+                    <view key="view" opaque="NO" contentMode="scaleToFill" id="ttX-FV-as2">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <webView contentMode="scaleToFill" id="1Yw-DJ-9j1">
+                            <webView contentMode="scaleToFill" scalesPageToFit="YES" id="1Yw-DJ-9j1">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="delegate" destination="vnx-ay-JPI" id="pqv-hW-HWV"/>
+                                </connections>
                             </webView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <toolbarItems>
-                        <barButtonItem title="Item" id="UxQ-gV-rO8"/>
+                        <barButtonItem title="Back" id="UxQ-gV-rO8"/>
                         <barButtonItem style="plain" systemItem="flexibleSpace" id="gfX-wf-emC"/>
-                        <barButtonItem title="Item" id="Ql2-ob-NPv"/>
+                        <barButtonItem id="Ql2-ob-NPv"/>
                         <barButtonItem style="plain" systemItem="flexibleSpace" id="zPX-p6-jFB"/>
                         <barButtonItem image="backIcon.png" id="EQ5-F6-CFJ">
                             <connections>
@@ -377,16 +357,22 @@ The Buzzhounds have taken Chicago's live scene by storm, creating a loyal follow
                             </connections>
                         </barButtonItem>
                     </toolbarItems>
+                    <navigationItem key="navigationItem" id="8Qt-YQ-pBx"/>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+                    <nil key="simulatedTopBarMetrics"/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
-                        <outlet property="backButton" destination="5im-TD-qob" id="qDz-Ok-u9M"/>
-                        <outlet property="forwardButton" destination="EQ5-F6-CFJ" id="evk-oK-H6p"/>
+                        <outlet property="activityButton" destination="Ql2-ob-NPv" id="JPx-k9-P1c"/>
+                        <outlet property="backButton" destination="EQ5-F6-CFJ" id="wiq-Ws-GZ2"/>
+                        <outlet property="forwardButton" destination="5im-TD-qob" id="KS3-ig-Tyd"/>
+                        <outlet property="goBackButton" destination="UxQ-gV-rO8" id="l11-xo-jkD"/>
                         <outlet property="webView" destination="1Yw-DJ-9j1" id="hU8-9K-FN7"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1FJ-fB-Pcx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1159" y="1270"/>
+            <point key="canvasLocation" x="791" y="1674"/>
         </scene>
         <!--Pic View Controller-->
         <scene sceneID="Wde-Xg-XUS">
@@ -468,19 +454,22 @@ The Buzzhounds have taken Chicago's live scene by storm, creating a loyal follow
     <resources>
         <image name="BH_WOMS_COVER_FINAL.jpg" width="450" height="450"/>
         <image name="BuzzHoundsFlag.jpg" width="800" height="516"/>
-        <image name="FB.png" width="512" height="512"/>
         <image name="SonicbidsIcon.png" width="420" height="420"/>
         <image name="Youtube-2.png" width="512" height="512"/>
         <image name="backIcon.png" width="23" height="23"/>
         <image name="band.jpg" width="960" height="557"/>
+        <image name="black_facebook.png" width="800" height="800"/>
         <image name="buzzhoundslogo.png" width="475" height="224"/>
         <image name="forwardIcon.png" width="23" height="23"/>
         <image name="icon-ios7-email-64.png" width="64" height="64"/>
-        <image name="reverbnation.png" width="150" height="30"/>
+        <image name="reverbnation-icon.png" width="256" height="256"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
+    <inferredMetricsTieBreakers>
+        <segue reference="K6Z-bU-AJm"/>
+    </inferredMetricsTieBreakers>
 </document>

@@ -12,10 +12,8 @@
     UIActivityIndicatorView* activity;
 }
 
-@property (strong, nonatomic) NSString* loadFor;
+@property (strong, nonatomic) NSString* loadurl;
 @property BOOL openLinksInSafari;
-@property BOOL showToolBar;
-@property BOOL showNavigationBar;
 
 @property (strong, nonatomic) IBOutlet UIWebView *webView;
 
@@ -23,5 +21,7 @@
 - (IBAction)didClickBack:(id)sender;
 @property (strong, nonatomic) IBOutlet UIBarButtonItem *backButton;
 @property (strong, nonatomic) IBOutlet UIBarButtonItem *forwardButton;
+@property (strong, nonatomic) IBOutlet UIBarButtonItem *goBackButton;
+@property (strong, nonatomic) IBOutlet UIBarButtonItem *activityButton;
 
 @end
