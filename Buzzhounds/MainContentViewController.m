@@ -55,7 +55,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    _YouTubeScrollView.contentSize = CGSizeMake(2520, 158);
+    _YouTubeScrollView.contentSize = CGSizeMake(2490, 158);
     _YouTubeScrollView.backgroundColor = [UIColor clearColor];
 
     soundFilePath = [[NSBundle mainBundle] pathForResource:@"deathrace-hardrock" ofType:@"mp3"];
@@ -190,6 +190,14 @@
     [alert show];
 }
 
+
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView {
+    
+    CGFloat pageWidth = _YouTubeScrollView.frame.size.width;
+    int page = floor((_YouTubeScrollView.contentOffset.x - pageWidth / 2) / pageWidth) + 1;
+    _videoPageControl.currentPage = page;
+    
+}
 #pragma mark - Navigation Delegate
 
 
@@ -233,6 +241,8 @@
         vc.loadurl = @"http://www.reverbnation.com/thebuzzhounds";
     }
 }
+
+
 
 
 @end

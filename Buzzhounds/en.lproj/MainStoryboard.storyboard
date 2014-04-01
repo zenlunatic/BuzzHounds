@@ -264,6 +264,10 @@
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                     </webView>
+                                    <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="8" id="Mc9-DV-MOD">
+                                        <rect key="frame" x="122" y="1003" width="113" height="37"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </pageControl>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             </view>
@@ -277,6 +281,7 @@
                         <outlet property="UpcomingShowsWebView" destination="eg1-Oq-YJh" id="ba2-yJ-U9g"/>
                         <outlet property="YouTubeScrollView" destination="1sz-xA-YhE" id="TjV-fN-NQM"/>
                         <outlet property="albumImage" destination="ece-hx-aV0" id="YQ4-2m-2hb"/>
+                        <outlet property="videoPageControl" destination="Mc9-DV-MOD" id="Ysz-HJ-XUq"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="t1q-JW-uWv" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -378,11 +383,11 @@ The Buzzhounds have taken Chicago's live scene by storm, creating a loyal follow
             <objects>
                 <viewController automaticallyAdjustsScrollViewInsets="NO" id="MZx-dr-DRI" customClass="PicViewController" sceneMemberID="viewController">
                     <view key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="Tek-E1-3od">
-                        <rect key="frame" x="0.0" y="0.0" width="2520" height="158"/>
+                        <rect key="frame" x="0.0" y="0.0" width="2490" height="158"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <webView autoresizesSubviews="NO" opaque="NO" contentMode="scaleToFill" id="xyd-B6-0QR">
-                                <rect key="frame" x="25" y="0.0" width="280" height="158"/>
+                                <rect key="frame" x="25" y="0.0" width="250" height="158"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -425,7 +430,7 @@ The Buzzhounds have taken Chicago's live scene by storm, creating a loyal follow
                                 <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             </webView>
                             <webView opaque="NO" contentMode="scaleToFill" id="hFk-og-1Mi">
-                                <rect key="frame" x="2210" y="0.0" width="280" height="158"/>
+                                <rect key="frame" x="2200" y="0.0" width="280" height="158"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -435,7 +440,7 @@ The Buzzhounds have taken Chicago's live scene by storm, creating a loyal follow
                     </view>
                     <toolbarItems/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-                    <size key="freeformSize" width="2520" height="158"/>
+                    <size key="freeformSize" width="2490" height="158"/>
                     <connections>
                         <outlet property="webView1" destination="xyd-B6-0QR" id="k8z-ya-qdt"/>
                         <outlet property="webView2" destination="Iu1-yU-3WR" id="4Dg-1X-2kk"/>

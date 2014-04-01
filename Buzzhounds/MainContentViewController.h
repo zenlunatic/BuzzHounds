@@ -25,5 +25,6 @@
 - (IBAction)didClickEmail:(id)sender;
 
 @property (strong, nonatomic) IBOutlet UIImageView *albumImage;
+@property (strong, nonatomic) IBOutlet UIPageControl *videoPageControl;
 
 @end
