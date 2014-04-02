@@ -26,5 +26,7 @@
 
 @property (strong, nonatomic) IBOutlet UIImageView *albumImage;
 @property (strong, nonatomic) IBOutlet UIPageControl *videoPageControl;
+@property (strong, nonatomic) IBOutlet UIButton *BandBioImage;
+@property (strong, nonatomic) IBOutlet UIButton *BuzzhoundsWebsiteImage;
 
 @end

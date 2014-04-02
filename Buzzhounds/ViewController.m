@@ -92,6 +92,17 @@
     }
 }
 
+- (IBAction)didTouchView:(id)sender {
+    if(self.scrollView.contentOffset.y == 0)
+    {
+         [self.scrollView setContentOffset:CGPointMake(self.scrollView.contentOffset.x, 390) animated:YES];
+    }
+    else  if(self.scrollView.contentOffset.y == 390){
+         [self.scrollView setContentOffset:CGPointMake(self.scrollView.contentOffset.x, 0) animated:YES];
+    }
+    
+}
+
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView {
     
     float settingDissolve = 500.0;

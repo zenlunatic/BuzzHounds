@@ -59,8 +59,10 @@
                                     </containerView>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <gestureRecognizers/>
                                 <connections>
                                     <outlet property="delegate" destination="sU7-Kc-mdO" id="CgK-eE-Wpy"/>
+                                    <outletCollection property="gestureRecognizers" destination="T2U-SR-4Lw" appends="YES" id="lVt-cW-KnG"/>
                                 </connections>
                             </scrollView>
                         </subviews>
@@ -98,6 +100,11 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DHT-MD-yXt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="T2U-SR-4Lw">
+                    <connections>
+                        <action selector="didTouchView:" destination="sU7-Kc-mdO" id="XVr-6M-rb3"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="-192" y="-62"/>
         </scene>
@@ -122,7 +129,7 @@
                                         </connections>
                                     </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="ow7-3N-7vX">
-                                        <rect key="frame" x="107" y="1444" width="123" height="67"/>
+                                        <rect key="frame" x="107" y="1483" width="123" height="67"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" title="News" image="BuzzHoundsFlag.jpg">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -143,7 +150,7 @@
                                         </connections>
                                     </button>
                                     <scrollView opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" alwaysBounceHorizontal="YES" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" id="1sz-xA-YhE">
-                                        <rect key="frame" x="8" y="1034" width="312" height="157"/>
+                                        <rect key="frame" x="8" y="1005" width="312" height="157"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES"/>
                                         <subviews>
                                             <containerView opaque="NO" contentMode="scaleAspectFit" id="eyR-G8-pvu">
@@ -163,11 +170,11 @@
                                         </connections>
                                     </scrollView>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BH_WOMS_COVER_FINAL.jpg" id="ece-hx-aV0">
-                                        <rect key="frame" x="23" y="670" width="280" height="280"/>
+                                        <rect key="frame" x="23" y="641" width="280" height="280"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Music" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Sfg-W4-lRl">
-                                        <rect key="frame" x="23" y="644" width="174" height="21"/>
+                                        <rect key="frame" x="23" y="615" width="174" height="21"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="20"/>
@@ -175,7 +182,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Upcoming Shows" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="7Sh-Pg-dsd">
-                                        <rect key="frame" x="24" y="209" width="276" height="30"/>
+                                        <rect key="frame" x="24" y="171" width="276" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="20"/>
@@ -183,7 +190,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Videos" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="scV-40-bNI">
-                                        <rect key="frame" x="23" y="1011" width="280" height="21"/>
+                                        <rect key="frame" x="23" y="982" width="280" height="21"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="20"/>
@@ -191,7 +198,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="JrV-4Q-rmN">
-                                        <rect key="frame" x="205" y="640" width="115" height="30"/>
+                                        <rect key="frame" x="205" y="611" width="115" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="19"/>
                                         <state key="normal" title="Download">
@@ -209,7 +216,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="ISY-kY-s5F">
-                                        <rect key="frame" x="24" y="1550" width="55" height="55"/>
+                                        <rect key="frame" x="24" y="1585" width="55" height="55"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" image="black_facebook.png">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -220,7 +227,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Rng-tL-Ymg">
-                                        <rect key="frame" x="101" y="1548" width="60" height="60"/>
+                                        <rect key="frame" x="101" y="1583" width="60" height="60"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" image="reverbnation-icon.png">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -240,7 +247,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="1H6-8H-ota">
-                                        <rect key="frame" x="169" y="1538" width="80" height="80"/>
+                                        <rect key="frame" x="169" y="1573" width="80" height="80"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" image="Youtube-2.png">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -250,7 +257,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="WCF-6J-g8O">
-                                        <rect key="frame" x="243" y="1543" width="70" height="70"/>
+                                        <rect key="frame" x="243" y="1578" width="70" height="70"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" title="Button" image="SonicbidsIcon.png">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -260,12 +267,12 @@
                                         </connections>
                                     </button>
                                     <webView opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" id="eg1-Oq-YJh">
-                                        <rect key="frame" x="23" y="238" width="280" height="369"/>
+                                        <rect key="frame" x="23" y="200" width="280" height="338"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                     </webView>
                                     <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="8" id="Mc9-DV-MOD">
-                                        <rect key="frame" x="122" y="1003" width="113" height="37"/>
+                                        <rect key="frame" x="122" y="974" width="113" height="37"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </pageControl>
                                 </subviews>
@@ -278,6 +285,8 @@
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="320" height="2000"/>
                     <connections>
+                        <outlet property="BandBioImage" destination="WWW-cv-7cL" id="blX-eV-oeK"/>
+                        <outlet property="BuzzhoundsWebsiteImage" destination="ow7-3N-7vX" id="SgS-Gx-1kJ"/>
                         <outlet property="UpcomingShowsWebView" destination="eg1-Oq-YJh" id="ba2-yJ-U9g"/>
                         <outlet property="YouTubeScrollView" destination="1sz-xA-YhE" id="TjV-fN-NQM"/>
                         <outlet property="albumImage" destination="ece-hx-aV0" id="YQ4-2m-2hb"/>

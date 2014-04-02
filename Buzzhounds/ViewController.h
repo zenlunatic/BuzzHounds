@@ -20,5 +20,6 @@
 
 - (IBAction) launchFlickrUserPhotoWebPage:(id) sender;
 
+- (IBAction)didTouchView:(id)sender;
 
 @end

@@ -38,18 +38,21 @@
     _UpcomingShowsWebView.scrollView.showsHorizontalScrollIndicator = NO;
     _UpcomingShowsWebView.scrollView.showsVerticalScrollIndicator = NO;
     
-    _UpcomingShowsWebView.layer.cornerRadius = 10;
-    for (UIView* subview in _UpcomingShowsWebView.subviews)
+}
+
+- (void)shadowView:(UIView *)view
+{
+    view.layer.cornerRadius = 10;
+    for (UIView* subview in view.subviews)
         subview.layer.cornerRadius = 10;
     
-    _UpcomingShowsWebView.layer.shadowColor = [UIColor blackColor].CGColor;
-    _UpcomingShowsWebView.layer.shadowOpacity = 0.7f;
-    _UpcomingShowsWebView.layer.shadowOffset = CGSizeMake(10.0f, 10.0f);
-    _UpcomingShowsWebView.layer.shadowRadius = 5.0f;
-    _UpcomingShowsWebView.layer.masksToBounds = NO;
+    view.layer.shadowColor = [UIColor blackColor].CGColor;
+    view.layer.shadowOpacity = 0.7f;
+    view.layer.shadowOffset = CGSizeMake(10.0f, 10.0f);
+    view.layer.shadowRadius = 5.0f;
+    view.layer.masksToBounds = NO;
     //UIBezierPath *path = [UIBezierPath bezierPathWithRect:_label.bounds];
     //_UpcomingShowsWebView.layer.shadowPath = path.CGPath;
-    
 }
 
 - (void)viewDidLoad
@@ -57,6 +60,12 @@
     [super viewDidLoad];
     _YouTubeScrollView.contentSize = CGSizeMake(2490, 158);
     _YouTubeScrollView.backgroundColor = [UIColor clearColor];
+    
+    [self shadowView:_UpcomingShowsWebView];
+    [self shadowView:_YouTubeScrollView];
+    [self shadowView:_albumImage];
+    [self shadowView:_BandBioImage];
+    [self shadowView:_BuzzhoundsWebsiteImage];
 
     soundFilePath = [[NSBundle mainBundle] pathForResource:@"deathrace-hardrock" ofType:@"mp3"];
 }
