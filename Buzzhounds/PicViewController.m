@@ -25,6 +25,20 @@
 
 - (void)viewDidLoad
 {
+    [self loadVideos];
+}
+
+
+- (void) loadVideos
+{
+    [self embedYoutube:_webView1 video:@"6VtbEZHX2eA"];
+    [self embedYoutube:_webView2 video:@"2Xu5P3wJIug"];
+    [self embedYoutube:_webView3 video:@"kANZmJYMw3o"];
+    [self embedYoutube:_webView4 video:@"Y_EtZqW4tCI"];
+    [self embedYoutube:_webView5 video:@"exEj-bTBNtg"];
+    [self embedYoutube:_webView6 video:@"vqchR8GGZB8"];
+    [self embedYoutube:_webView7 video:@"Cnb6XJvzOWc"];
+    [self embedYoutube:_webView9 video:@"yrwp3zZzzm0"];
 }
 
 - (void)didReceiveMemoryWarning
@@ -34,7 +48,11 @@
 
 - (void)viewWillAppear:(BOOL)animated
 {
-    NSString *embedHTML =[NSString stringWithFormat:@"\
+}
+
+- (void) embedYoutube:(UIWebView *)webview video:(NSString*)urlpart
+{
+    NSString *embedHTML=[NSString stringWithFormat:@"\
                           <html><head>\
                           <style type=\"text/css\">\
                           body {\
@@ -43,103 +61,9 @@
                           }\
                           </style>\
                           </head><body style=\"margin:0\">\
-                          <iframe width=\"280\" height=\"158\" src=\"http://www.youtube.com/embed/6VtbEZHX2eA?rel=0&showinfo=0\" frameborder=\"0\"></iframe>\
-                          </body></html>"];
-    [_webView1 loadHTMLString:embedHTML baseURL:nil];
-    
-    NSString *embedHTML2 =[NSString stringWithFormat:@"\
-                           <html><head>\
-                           <style type=\"text/css\">\
-                           body {\
-                           background-color: transparent;\
-                           color: transparent;\
-                           }\
-                           </style>\
-                           </head><body style=\"margin:0\">\
-                           <iframe width=\"280\" height=\"158\" src=\"http://www.youtube.com/embed/2Xu5P3wJIug?rel=0&showinfo=0\" frameborder=\"0\"></iframe>\
-                           </body></html>"];
-    
-    [_webView2 loadHTMLString:embedHTML2 baseURL:nil];
-    
-    NSString *embedHTML3 =[NSString stringWithFormat:@"\
-                           <html><head>\
-                           <style type=\"text/css\">\
-                           body {\
-                           background-color: transparent;\
-                           color: transparent;\
-                           }\
-                           </style>\
-                           </head><body style=\"margin:0\">\
-                           <iframe width=\"280\" height=\"158\" src=\"http://www.youtube.com/embed/kANZmJYMw3o?rel=0&showinfo=0\" frameborder=\"0\"></iframe>\
-                           </body></html>"];
-    [_webView3 loadHTMLString:embedHTML3 baseURL:nil];
-    
-    NSString *embedHTML4 =[NSString stringWithFormat:@"\
-                           <html><head>\
-                           <style type=\"text/css\">\
-                           body {\
-                           background-color: transparent;\
-                           color: transparent;\
-                           }\
-                           </style>\
-                           </head><body style=\"margin:0\">\
-                           <iframe width=\"280\" height=\"158\" src=\"http://www.youtube.com/embed/Y_EtZqW4tCI?rel=0&showinfo=0\" frameborder=\"0\"></iframe>\
-                           </body></html>"];
-    
-    [_webView4 loadHTMLString:embedHTML4 baseURL:nil];
-    
-    NSString *embedHTML5=[NSString stringWithFormat:@"\
-                          <html><head>\
-                          <style type=\"text/css\">\
-                          body {\
-                          background-color: transparent;\
-                          color: transparent;\
-                          }\
-                          </style>\
-                          </head><body style=\"margin:0\">\
-                          <iframe width=\"280\" height=\"158\" src=\"http://www.youtube.com/embed/exEj-bTBNtg?rel=0&showinfo=0\" frameborder=\"0\"></iframe>\
-                          </body></html>"];
-    [_webView5 loadHTMLString:embedHTML5 baseURL:nil];
-    
-    NSString *embedHTML6=[NSString stringWithFormat:@"\
-                          <html><head>\
-                          <style type=\"text/css\">\
-                          body {\
-                          background-color: transparent;\
-                          color: transparent;\
-                          }\
-                          </style>\
-                          </head><body style=\"margin:0\">\
-                          <iframe width=\"280\" height=\"158\" src=\"http://www.youtube.com/embed/vqchR8GGZB8?rel=0&showinfo=0\" frameborder=\"0\"></iframe>\
-                          </body></html>"];
-    [_webView6 loadHTMLString:embedHTML6 baseURL:nil];
-    
-    NSString *embedHTML7=[NSString stringWithFormat:@"\
-                          <html><head>\
-                          <style type=\"text/css\">\
-                          body {\
-                          background-color: transparent;\
-                          color: transparent;\
-                          }\
-                          </style>\
-                          </head><body style=\"margin:0\">\
-                          <iframe width=\"280\" height=\"158\" src=\"http://www.youtube.com/embed/Cnb6XJvzOWc?rel=0&showinfo=0\" frameborder=\"0\"></iframe>\
-                          </body></html>"];
-    [_webView7 loadHTMLString:embedHTML7 baseURL:nil];
-    
-    
-    NSString *embedHTML9=[NSString stringWithFormat:@"\
-                          <html><head>\
-                          <style type=\"text/css\">\
-                          body {\
-                          background-color: transparent;\
-                          color: transparent;\
-                          }\
-                          </style>\
-                          </head><body style=\"margin:0\">\
-                          <iframe width=\"280\" height=\"158\" src=\"http://www.youtube.com/embed/yrwp3zZzzm0?rel=0&showinfo=0\" frameborder=\"0\"></iframe>\
-                          </body></html>"];
-    [_webView9 loadHTMLString:embedHTML9 baseURL:nil];
+                          <iframe width=\"280\" height=\"158\" src=\"http://www.youtube.com/embed/%@?rel=0&showinfo=0\" frameborder=\"0\"></iframe>\
+                          </body></html>",urlpart];
+    [webview loadHTMLString:embedHTML baseURL:nil];
 }
 
 - (void)viewWillDisappear:(BOOL)animated

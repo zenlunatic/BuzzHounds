@@ -23,6 +23,8 @@
 - (IBAction)didClickDownload:(id)sender;
 - (IBAction)didClickFacebook:(id)sender;
 - (IBAction)didClickEmail:(id)sender;
+- (IBAction)didClickRefreshUpcomngShows:(id)sender;
+- (IBAction)didClickRefreshVideos:(id)sender;
 
 @property (strong, nonatomic) IBOutlet UIImageView *albumImage;
 @property (strong, nonatomic) IBOutlet UIPageControl *videoPageControl;
