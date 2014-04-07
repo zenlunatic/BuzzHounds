@@ -25,10 +25,12 @@
 - (IBAction)didClickEmail:(id)sender;
 - (IBAction)didClickRefreshUpcomngShows:(id)sender;
 - (IBAction)didClickRefreshVideos:(id)sender;
+- (IBAction)didClickEmailButton:(id)sender;
 
 @property (strong, nonatomic) IBOutlet UIImageView *albumImage;
 @property (strong, nonatomic) IBOutlet UIPageControl *videoPageControl;
 @property (strong, nonatomic) IBOutlet UIButton *BandBioImage;
 @property (strong, nonatomic) IBOutlet UIButton *BuzzhoundsWebsiteImage;
+@property (strong, nonatomic) IBOutlet UIButton *emailIcon;
 
 @end

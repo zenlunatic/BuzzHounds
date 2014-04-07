@@ -67,6 +67,7 @@
     [self shadowView:_albumImage];
     [self shadowView:_BandBioImage];
     [self shadowView:_BuzzhoundsWebsiteImage];
+    //[self shadowView:_emailIcon];
 
     soundFilePath = [[NSBundle mainBundle] pathForResource:@"deathrace-hardrock" ofType:@"mp3"];
 }
@@ -153,9 +154,13 @@
 - (IBAction)didClickFacebook:(id)sender {
     
             NSURL *facebookURL = [NSURL URLWithString:@"fb://profile/350835098300811"];
-            if ([[UIApplication sharedApplication] canOpenURL:facebookURL]) {
+    
+            if ([[UIApplication sharedApplication] canOpenURL:facebookURL])
+            {
                 [[UIApplication sharedApplication] openURL:facebookURL];
-            } else {
+            }
+            else
+            {
                 [self performSegueWithIdentifier: @"FacebookSegue" sender:self];
             }
     
@@ -165,14 +170,14 @@
     
     NSString* welcome = @"<p>Welcome to The BuzzHounds.</p>";
     NSString* message = @"<p> For more information about the BuzzHounds:</p>";
-    NSString* facebook = @"<p><a href=\"http://www.facebook.com/buzzhounds\">Buzzhounds Facebook</a>  </p>";
-    NSString* presskit = @"<p><a href=\"http://www.sonicbids.com/band/thebuzzhounds\">Buzzhounds Presskit</a></p>";
-    NSString* bandpage = @"<p><a href=\"http://www.buzzhounds.net\">Buzzhounds Website</a> </p>";
-    NSString* youtube = @"<p><a href=\"http://www.youtube.com/user/kudathecat\">Buzzhounds Youtube</a> </p>";
-    NSString* reverbNation = @"<p><a href=\"http://www.reverbnation.com/thebuzzhounds\">Reverb Nation</a> </p>";
+    NSString* facebook = @"<p><a href=\"http://www.facebook.com/buzzhounds\">BuzzHounds on Facebook</a>  </p>";
+    NSString* presskit = @"<p><a href=\"http://www.sonicbids.com/band/thebuzzhounds\">BuzzHounds on Presskit</a></p>";
+    NSString* bandpage = @"<p><a href=\"http://www.buzzhounds.net\">BuzzHounds Website</a> </p>";
+    NSString* youtube = @"<p><a href=\"http://www.youtube.com/user/kudathecat\">BuzzHounds on Youtube</a> </p>";
+    NSString* reverbNation = @"<p><a href=\"http://www.reverbnation.com/thebuzzhounds\">BuzzHounds on Reverb Nation</a> </p>";
     
     
-    NSString *body = [NSString stringWithFormat:@"<html><body>%@<br /><br />%@%@%@%@%@%@</body></html>", welcome, message, facebook, presskit, bandpage, youtube, reverbNation];
+    NSString *body = [NSString stringWithFormat:@"<html><body>%@<br /><br />%@%@%@%@%@%@</body></html>", welcome, message, bandpage, facebook, presskit, youtube, reverbNation];
     
     MFMailComposeViewController *emailer = [[MFMailComposeViewController alloc] init];
     emailer.mailComposeDelegate = self;
@@ -200,6 +205,31 @@
 - (IBAction)didClickRefreshVideos:(id)sender {
     PicViewController *pic = (PicViewController *)self.childViewControllers[0];
     [pic loadVideos];
+}
+
+- (IBAction)didClickEmailButton:(id)sender {
+    
+    NSString* welcome = @"<p>Hey BuzzHounds.</p>";
+    NSString* message = @"<p> Tell me more about the band. </p>";
+    
+    NSString *body = [NSString stringWithFormat:@"<html><body>%@<br /><br />%@</body></html>", welcome, message];
+    
+    MFMailComposeViewController *emailer = [[MFMailComposeViewController alloc] init];
+    emailer.mailComposeDelegate = self;
+    
+    NSArray *toRecipents = [NSArray arrayWithObject:@"jmanga@6exec.com"];
+   // NSArray *BccRecipents = [NSArray arrayWithObject:@"junelee1974@yahoo.com"];
+
+    [emailer setSubject:@"Buzzhounds iPhone App"];
+    [emailer setMessageBody:body isHTML:YES];
+    [emailer setToRecipients:toRecipents];
+  //  [emailer setBccRecipients:BccRecipents];
+    
+    if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) {
+        emailer.modalPresentationStyle = UIModalPresentationPageSheet;
+    }
+    [self presentViewController:emailer animated:YES completion:nil];
+
 }
 
 - (void)mailComposeController:(MFMailComposeViewController*)controller didFinishWithResult:(MFMailComposeResult)result error:(NSError*)error

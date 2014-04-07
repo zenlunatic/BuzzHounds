@@ -129,7 +129,7 @@
                                         </connections>
                                     </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="ow7-3N-7vX">
-                                        <rect key="frame" x="107" y="1483" width="123" height="67"/>
+                                        <rect key="frame" x="103" y="1484" width="123" height="67"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" title="News" image="BuzzHoundsFlag.jpg">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -227,7 +227,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Rng-tL-Ymg">
-                                        <rect key="frame" x="101" y="1583" width="60" height="60"/>
+                                        <rect key="frame" x="100" y="1583" width="60" height="60"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" image="reverbnation-icon.png">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -237,9 +237,9 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="YHl-mi-eUx">
-                                        <rect key="frame" x="256" y="105" width="44" height="46"/>
+                                        <rect key="frame" x="265" y="108" width="35" height="33"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" image="icon-ios7-email-64.png">
+                                        <state key="normal" image="share.png">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
@@ -247,7 +247,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="1H6-8H-ota">
-                                        <rect key="frame" x="169" y="1573" width="80" height="80"/>
+                                        <rect key="frame" x="166" y="1573" width="80" height="80"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" image="Youtube-2.png">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -257,7 +257,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="WCF-6J-g8O">
-                                        <rect key="frame" x="243" y="1578" width="70" height="70"/>
+                                        <rect key="frame" x="243" y="1576" width="70" height="70"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" title="Button" image="SonicbidsIcon.png">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -295,6 +295,16 @@
                                             <action selector="didClickRefreshVideos:" destination="YiS-HA-V0D" eventType="touchUpInside" id="KZk-Oa-5Vy"/>
                                         </connections>
                                     </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="73d-zB-xve">
+                                        <rect key="frame" x="252" y="1507" width="52" height="56"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="icon-ios7-email-64.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="didClickEmailButton:" destination="YiS-HA-V0D" eventType="touchUpInside" id="was-ZG-HJE"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             </view>
@@ -310,6 +320,7 @@
                         <outlet property="UpcomingShowsWebView" destination="eg1-Oq-YJh" id="ba2-yJ-U9g"/>
                         <outlet property="YouTubeScrollView" destination="1sz-xA-YhE" id="TjV-fN-NQM"/>
                         <outlet property="albumImage" destination="ece-hx-aV0" id="YQ4-2m-2hb"/>
+                        <outlet property="emailIcon" destination="73d-zB-xve" id="D7Q-AX-gbN"/>
                         <outlet property="videoPageControl" destination="Mc9-DV-MOD" id="Ysz-HJ-XUq"/>
                     </connections>
                 </viewController>
@@ -499,6 +510,7 @@ The Buzzhounds have taken Chicago's live scene by storm, creating a loyal follow
         <image name="icon-ios7-email-64.png" width="64" height="64"/>
         <image name="refresh.png" width="614" height="460"/>
         <image name="reverbnation-icon.png" width="256" height="256"/>
+        <image name="share.png" width="512" height="512"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>

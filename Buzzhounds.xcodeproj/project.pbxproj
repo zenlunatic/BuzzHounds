@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		044186A418F2D3C800A7AF7B /* refresh.png in Resources */ = {isa = PBXBuildFile; fileRef = 044186A318F2D3C800A7AF7B /* refresh.png */; };
+		044186A818F2DD3200A7AF7B /* share.png in Resources */ = {isa = PBXBuildFile; fileRef = 044186A718F2DD3200A7AF7B /* share.png */; };
 		045BE32618E385A60057D350 /* icon-ios7-email-64.png in Resources */ = {isa = PBXBuildFile; fileRef = 045BE32518E385A60057D350 /* icon-ios7-email-64.png */; };
 		045BE32818E3872A0057D350 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 045BE32718E3872A0057D350 /* MessageUI.framework */; };
 		045BE32A18E45B870057D350 /* youtube.png in Resources */ = {isa = PBXBuildFile; fileRef = 045BE32918E45B870057D350 /* youtube.png */; };
@@ -71,6 +72,7 @@
 
 /* Begin PBXFileReference section */
 		044186A318F2D3C800A7AF7B /* refresh.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = refresh.png; sourceTree = "<group>"; };
+		044186A718F2DD3200A7AF7B /* share.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = share.png; sourceTree = "<group>"; };
 		045BE32518E385A60057D350 /* icon-ios7-email-64.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-ios7-email-64.png"; sourceTree = "<group>"; };
 		045BE32718E3872A0057D350 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		045BE32918E45B870057D350 /* youtube.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = youtube.png; sourceTree = "<group>"; };
@@ -193,6 +195,7 @@
 		04F1880B18DB6390004515D2 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				044186A718F2DD3200A7AF7B /* share.png */,
 				044186A318F2D3C800A7AF7B /* refresh.png */,
 				045BE34618E4CEE60057D350 /* backIcon.png */,
 				045BE34718E4CEE60057D350 /* forwardIcon.png */,
@@ -451,6 +454,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				045BE33218E45EE80057D350 /* FB.png in Resources */,
+				044186A818F2DD3200A7AF7B /* share.png in Resources */,
 				04F1882518E0D2ED004515D2 /* facebook.png in Resources */,
 				045BE33418E45F460057D350 /* Youtube-2.png in Resources */,
 				045BE34818E4CEE60057D350 /* backIcon.png in Resources */,

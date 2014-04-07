@@ -120,7 +120,7 @@
 
 -(IBAction)goBack:(id)sender
 {
-    [self.navigationController popViewControllerAnimated:NO];
+    [self.navigationController popViewControllerAnimated:YES];
 }
 - (IBAction)didClickFoward:(id)sender {
     [self.webView goForward];
