@@ -209,15 +209,15 @@
 
 - (IBAction)didClickEmailButton:(id)sender {
     
-    NSString* welcome = @"<p>Hey BuzzHounds.</p>";
-    NSString* message = @"<p> Tell me more about the band. </p>";
+    NSString* welcome = @"<p>Hey,</p>";
+    NSString* message = @"<p> Tell me more about the band or the BuzzHounds app. </p>";
     
     NSString *body = [NSString stringWithFormat:@"<html><body>%@<br /><br />%@</body></html>", welcome, message];
     
     MFMailComposeViewController *emailer = [[MFMailComposeViewController alloc] init];
     emailer.mailComposeDelegate = self;
     
-    NSArray *toRecipents = [NSArray arrayWithObject:@"jmanga@6exec.com"];
+    NSArray *toRecipents = [NSArray arrayWithObject:@"junelee1974@yahoo.com"];
    // NSArray *BccRecipents = [NSArray arrayWithObject:@"junelee1974@yahoo.com"];
 
     [emailer setSubject:@"Buzzhounds iPhone App"];
