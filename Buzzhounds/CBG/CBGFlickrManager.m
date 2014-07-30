@@ -101,7 +101,7 @@ static CBGFlickrManager *sharedManager = nil;
                                                   KFlickrSsearchTags, @"tags",
                                                   @"tag_mode", @"any",
                                                   KFlickrSearchLicense, @"license",
-                                                  @"500", @"per_page",
+                                                  @"100", @"per_page",
                                                   nil]];
     }
 }

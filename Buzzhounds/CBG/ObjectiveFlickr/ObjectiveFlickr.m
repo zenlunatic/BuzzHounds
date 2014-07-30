@@ -64,11 +64,11 @@ typedef unsigned int NSUInteger;
 - (NSString *)signedQueryFromArguments:(NSDictionary *)inArguments;
 @end
 
-#define kDefaultFlickrRESTAPIEndpoint		@"http://api.flickr.com/services/rest/"
+#define kDefaultFlickrRESTAPIEndpoint		@"https://api.flickr.com/services/rest/"
 #define kDefaultFlickrPhotoSource			@"http://static.flickr.com/"
 #define kDefaultFlickrPhotoWebPageSource	@"http://www.flickr.com/photos/"
 #define kDefaultFlickrAuthEndpoint			@"http://flickr.com/services/auth/"
-#define kDefaultFlickrUploadEndpoint		@"http://api.flickr.com/services/upload/"
+#define kDefaultFlickrUploadEndpoint		@"https://api.flickr.com/services/upload/"
 
 @implementation OFFlickrAPIContext
 - (void)dealloc
